@@ -88,11 +88,119 @@
   </style>
 </noscript>
 
-<!-- hexo injector head_end start -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css">
+<style>mjx-container[jax="SVG"] {
+  direction: ltr;
+}
 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hexo-math@4.0.0/dist/style.css">
-<!-- hexo injector head_end end --></head>
+mjx-container[jax="SVG"] > svg {
+  overflow: visible;
+}
+
+mjx-container[jax="SVG"][display="true"] {
+  display: block;
+  text-align: center;
+  margin: 1em 0;
+}
+
+mjx-container[jax="SVG"][justify="left"] {
+  text-align: left;
+}
+
+mjx-container[jax="SVG"][justify="right"] {
+  text-align: right;
+}
+
+g[data-mml-node="merror"] > g {
+  fill: red;
+  stroke: red;
+}
+
+g[data-mml-node="merror"] > rect[data-background] {
+  fill: yellow;
+  stroke: none;
+}
+
+g[data-mml-node="mtable"] > line[data-line] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node="mtable"] > rect[data-frame] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node="mtable"] > .mjx-dashed {
+  stroke-dasharray: 140;
+}
+
+g[data-mml-node="mtable"] > .mjx-dotted {
+  stroke-linecap: round;
+  stroke-dasharray: 0,140;
+}
+
+g[data-mml-node="mtable"] > svg {
+  overflow: visible;
+}
+
+[jax="SVG"] mjx-tool {
+  display: inline-block;
+  position: relative;
+  width: 0;
+  height: 0;
+}
+
+[jax="SVG"] mjx-tool > mjx-tip {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+mjx-tool > mjx-tip {
+  display: inline-block;
+  padding: .2em;
+  border: 1px solid #888;
+  font-size: 70%;
+  background-color: #F8F8F8;
+  color: black;
+  box-shadow: 2px 2px 5px #AAAAAA;
+}
+
+g[data-mml-node="maction"][data-toggle] {
+  cursor: pointer;
+}
+
+mjx-status {
+  display: block;
+  position: fixed;
+  left: 1em;
+  bottom: 1em;
+  min-width: 25%;
+  padding: .2em .4em;
+  border: 1px solid #888;
+  font-size: 90%;
+  background-color: #F8F8F8;
+  color: black;
+}
+
+foreignObject[data-mjx-xml] {
+  font-family: initial;
+  line-height: normal;
+  overflow: visible;
+}
+
+.MathJax path {
+  stroke-width: 3;
+}
+
+mjx-container[display="true"] {
+  overflow: auto hidden;
+}
+
+mjx-container[display="true"] + br {
+  display: none;
+}
+</style></head>
 
 <body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
   <div class="headband"></div>
@@ -239,7 +347,7 @@
       <span class="post-meta-item-text">发表于</span>
       
 
-      <time title="创建时间：2021-05-14 00:00:00 / 修改时间：17:58:34" itemprop="dateCreated datePublished" datetime="2021-05-14T00:00:00+08:00">2021-05-14</time>
+      <time title="创建时间：2021-05-14 00:00:00 / 修改时间：18:28:21" itemprop="dateCreated datePublished" datetime="2021-05-14T00:00:00+08:00">2021-05-14</time>
     </span>
 
   
@@ -253,19 +361,29 @@
     
     <div class="post-body" itemprop="articleBody">
           <p>这周几乎虚度，白天睡觉，晚上肝ddl，左适之啊左适之，你怎能如此堕落。</p>
-<h4 id="精神划水"><a href="#精神划水" class="headerlink" title="精神划水"></a>精神划水</h4><p>肝费曼作业，高微作业，恒星作业，费曼讨论纪要，还有写沟的辩论。宿舍的下午完全没有生产力，一觉醒来，下午已经没了。一般得到晚上12点以后，我才算是睡醒，生产力逐渐恢复。</p>
+<h4 id="精神划水">精神划水</h4>
+<p>肝费曼作业，高微作业，恒星作业，费曼讨论纪要，还有写沟的辩论。宿舍的下午完全没有生产力，一觉醒来，下午已经没了。一般得到晚上12点以后，我才算是睡醒，生产力逐渐恢复。</p>
 <p>恒星作业已开始涉及数据分析，我一直在用MATLAB，不过教授推荐用Python，我也不太懂。不知道列表有没有老哥能分析一下两者的优劣。</p>
-<p>复变课越来越震撼，这样下去松学很快就能超越谢性丹数的地位。柯西积分公式这块我已经不太能跟上了，姑且把公式在这默写一遍以自勉。<br>$$<br>\<br>f(\unicode{128517})=\frac1{2\pi i}\oint_C\frac{f(\unicode{128516})}{\unicode{128516}-\unicode{128517}}d\unicode{128516}<br>$$<br>相比之下，费曼作业倒显得水了，除了第一题傅里叶不太熟，后面要么照抄讲义，要么照抄朗道场论。</p>
+<p>复变课越来越震撼，这样下去松学很快就能超越谢性丹数的地位。柯西积分公式这块我已经不太能跟上了，姑且把公式在这默写一遍以自勉。 <span class="math display"><mjx-container class="MathJax" jax="SVG" display="true"><svg style="vertical-align: -2.063ex" xmlns="http://www.w3.org/2000/svg" width="24.567ex" height="5.366ex" role="img" focusable="false" viewbox="0 -1460 10858.7 2371.9"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mtext"><path data-c="A0" d=""/></g><g data-mml-node="mi" transform="translate(250,0)"><path data-c="1D453" d="M118 -162Q120 -162 124 -164T135 -167T147 -168Q160 -168 171 -155T187 -126Q197 -99 221 27T267 267T289 382V385H242Q195 385 192 387Q188 390 188 397L195 425Q197 430 203 430T250 431Q298 431 298 432Q298 434 307 482T319 540Q356 705 465 705Q502 703 526 683T550 630Q550 594 529 578T487 561Q443 561 443 603Q443 622 454 636T478 657L487 662Q471 668 457 668Q445 668 434 658T419 630Q412 601 403 552T387 469T380 433Q380 431 435 431Q480 431 487 430T498 424Q499 420 496 407T491 391Q489 386 482 386T428 385H372L349 263Q301 15 282 -47Q255 -132 212 -173Q175 -205 139 -205Q107 -205 81 -186T55 -132Q55 -95 76 -78T118 -61Q162 -61 162 -103Q162 -122 151 -136T127 -157L118 -162Z"/></g><g data-mml-node="mo" transform="translate(800,0)"><path data-c="28" d="M94 250Q94 319 104 381T127 488T164 576T202 643T244 695T277 729T302 750H315H319Q333 750 333 741Q333 738 316 720T275 667T226 581T184 443T167 250T184 58T225 -81T274 -167T316 -220T333 -241Q333 -250 318 -250H315H302L274 -226Q180 -141 137 -14T94 250Z"/></g><g data-mml-node="mtext" transform="translate(1189,0)"><text data-variant="normal" transform="scale(1,-1)" font-size="884px" font-family="serif">😅</text></g><g data-mml-node="mo" transform="translate(1789,0)"><path data-c="29" d="M60 749L64 750Q69 750 74 750H86L114 726Q208 641 251 514T294 250Q294 182 284 119T261 12T224 -76T186 -143T145 -194T113 -227T90 -246Q87 -249 86 -250H74Q66 -250 63 -250T58 -247T55 -238Q56 -237 66 -225Q221 -64 221 250T66 725Q56 737 55 738Q55 746 60 749Z"/></g><g data-mml-node="mo" transform="translate(2455.8,0)"><path data-c="3D" d="M56 347Q56 360 70 367H707Q722 359 722 347Q722 336 708 328L390 327H72Q56 332 56 347ZM56 153Q56 168 72 173H708Q722 163 722 153Q722 140 707 133H70Q56 140 56 153Z"/></g><g data-mml-node="mfrac" transform="translate(3511.6,0)"><g data-mml-node="mn" transform="translate(677.5,676)"><path data-c="31" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"/></g><g data-mml-node="mrow" transform="translate(220,-686)"><g data-mml-node="mn"><path data-c="32" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z"/></g><g data-mml-node="mi" transform="translate(500,0)"><path data-c="1D70B" d="M132 -11Q98 -11 98 22V33L111 61Q186 219 220 334L228 358H196Q158 358 142 355T103 336Q92 329 81 318T62 297T53 285Q51 284 38 284Q19 284 19 294Q19 300 38 329T93 391T164 429Q171 431 389 431Q549 431 553 430Q573 423 573 402Q573 371 541 360Q535 358 472 358H408L405 341Q393 269 393 222Q393 170 402 129T421 65T431 37Q431 20 417 5T381 -10Q370 -10 363 -7T347 17T331 77Q330 86 330 121Q330 170 339 226T357 318T367 358H269L268 354Q268 351 249 275T206 114T175 17Q164 -11 132 -11Z"/></g><g data-mml-node="mi" transform="translate(1070,0)"><path data-c="1D456" d="M184 600Q184 624 203 642T247 661Q265 661 277 649T290 619Q290 596 270 577T226 557Q211 557 198 567T184 600ZM21 287Q21 295 30 318T54 369T98 420T158 442Q197 442 223 419T250 357Q250 340 236 301T196 196T154 83Q149 61 149 51Q149 26 166 26Q175 26 185 29T208 43T235 78T260 137Q263 149 265 151T282 153Q302 153 302 143Q302 135 293 112T268 61T223 11T161 -11Q129 -11 102 10T74 74Q74 91 79 106T122 220Q160 321 166 341T173 380Q173 404 156 404H154Q124 404 99 371T61 287Q60 286 59 284T58 281T56 279T53 278T49 278T41 278H27Q21 284 21 287Z"/></g></g><rect width="1615" height="60" x="120" y="220"/></g><g data-mml-node="msub" transform="translate(5533.2,0)"><g data-mml-node="mo" transform="translate(0 1)"><path data-c="222E" d="M114 -798Q132 -824 165 -824H167Q195 -824 223 -764T275 -600T320 -391T362 -164Q365 -143 367 -133Q382 -52 390 2Q314 40 276 99Q230 167 230 249Q230 363 305 436T484 519H494L503 563Q587 939 632 1087T727 1298Q774 1360 828 1360Q884 1360 912 1325T944 1245Q944 1220 932 1205T909 1186T887 1183Q866 1183 849 1198T832 1239Q832 1287 885 1296L882 1300Q879 1303 874 1307T866 1313Q851 1323 833 1323Q766 1323 688 929Q662 811 610 496Q770 416 770 249Q770 147 701 68T516 -21H506L497 -65Q407 -464 357 -623T237 -837Q203 -862 165 -862Q125 -862 92 -831T55 -746Q55 -711 74 -698T112 -685Q133 -685 150 -700T167 -741Q167 -789 114 -798ZM480 478Q460 478 435 470T380 444T327 401T287 335T271 249Q271 124 375 56L397 43L431 223L485 478H480ZM519 20Q545 20 578 33T647 72T706 144T730 249Q730 383 603 455Q603 454 597 421T582 343T569 276Q516 22 515 20H519Z"/></g><g data-mml-node="mi" transform="translate(589,-896.4) scale(0.707)"><path data-c="1D436" d="M50 252Q50 367 117 473T286 641T490 704Q580 704 633 653Q642 643 648 636T656 626L657 623Q660 623 684 649Q691 655 699 663T715 679T725 690L740 705H746Q760 705 760 698Q760 694 728 561Q692 422 692 421Q690 416 687 415T669 413H653Q647 419 647 422Q647 423 648 429T650 449T651 481Q651 552 619 605T510 659Q484 659 454 652T382 628T299 572T226 479Q194 422 175 346T156 222Q156 108 232 58Q280 24 350 24Q441 24 512 92T606 240Q610 253 612 255T628 257Q648 257 648 248Q648 243 647 239Q618 132 523 55T319 -22Q206 -22 128 53T50 252Z"/></g></g><g data-mml-node="mfrac" transform="translate(6876.3,0)"><g data-mml-node="mrow" transform="translate(467.2,710)"><g data-mml-node="mi"><path data-c="1D453" d="M118 -162Q120 -162 124 -164T135 -167T147 -168Q160 -168 171 -155T187 -126Q197 -99 221 27T267 267T289 382V385H242Q195 385 192 387Q188 390 188 397L195 425Q197 430 203 430T250 431Q298 431 298 432Q298 434 307 482T319 540Q356 705 465 705Q502 703 526 683T550 630Q550 594 529 578T487 561Q443 561 443 603Q443 622 454 636T478 657L487 662Q471 668 457 668Q445 668 434 658T419 630Q412 601 403 552T387 469T380 433Q380 431 435 431Q480 431 487 430T498 424Q499 420 496 407T491 391Q489 386 482 386T428 385H372L349 263Q301 15 282 -47Q255 -132 212 -173Q175 -205 139 -205Q107 -205 81 -186T55 -132Q55 -95 76 -78T118 -61Q162 -61 162 -103Q162 -122 151 -136T127 -157L118 -162Z"/></g><g data-mml-node="mo" transform="translate(550,0)"><path data-c="28" d="M94 250Q94 319 104 381T127 488T164 576T202 643T244 695T277 729T302 750H315H319Q333 750 333 741Q333 738 316 720T275 667T226 581T184 443T167 250T184 58T225 -81T274 -167T316 -220T333 -241Q333 -250 318 -250H315H302L274 -226Q180 -141 137 -14T94 250Z"/></g><g data-mml-node="mtext" transform="translate(939,0)"><text data-variant="normal" transform="scale(1,-1)" font-size="884px" font-family="serif">😄</text></g><g data-mml-node="mo" transform="translate(1539,0)"><path data-c="29" d="M60 749L64 750Q69 750 74 750H86L114 726Q208 641 251 514T294 250Q294 182 284 119T261 12T224 -76T186 -143T145 -194T113 -227T90 -246Q87 -249 86 -250H74Q66 -250 63 -250T58 -247T55 -238Q56 -237 66 -225Q221 -64 221 250T66 725Q56 737 55 738Q55 746 60 749Z"/></g></g><g data-mml-node="mrow" transform="translate(220,-710)"><g data-mml-node="mtext"><text data-variant="normal" transform="scale(1,-1)" font-size="884px" font-family="serif">😄</text></g><g data-mml-node="mo" transform="translate(822.2,0)"><path data-c="2212" d="M84 237T84 250T98 270H679Q694 262 694 250T679 230H98Q84 237 84 250Z"/></g><g data-mml-node="mtext" transform="translate(1822.4,0)"><text data-variant="normal" transform="scale(1,-1)" font-size="884px" font-family="serif">😅</text></g></g><rect width="2622.4" height="60" x="120" y="220"/></g><g data-mml-node="mi" transform="translate(9738.7,0)"><path data-c="1D451" d="M366 683Q367 683 438 688T511 694Q523 694 523 686Q523 679 450 384T375 83T374 68Q374 26 402 26Q411 27 422 35Q443 55 463 131Q469 151 473 152Q475 153 483 153H487H491Q506 153 506 145Q506 140 503 129Q490 79 473 48T445 8T417 -8Q409 -10 393 -10Q359 -10 336 5T306 36L300 51Q299 52 296 50Q294 48 292 46Q233 -10 172 -10Q117 -10 75 30T33 157Q33 205 53 255T101 341Q148 398 195 420T280 442Q336 442 364 400Q369 394 369 396Q370 400 396 505T424 616Q424 629 417 632T378 637H357Q351 643 351 645T353 664Q358 683 366 683ZM352 326Q329 405 277 405Q242 405 210 374T160 293Q131 214 119 129Q119 126 119 118T118 106Q118 61 136 44T179 26Q233 26 290 98L298 109L352 326Z"/></g><g data-mml-node="mtext" transform="translate(10258.7,0)"><text data-variant="normal" transform="scale(1,-1)" font-size="884px" font-family="serif">😄</text></g></g></g></svg></mjx-container></span> 相比之下，费曼作业倒显得水了，除了第一题傅里叶不太熟，后面要么照抄讲义，要么照抄朗道场论。</p>
 <p>周四学堂班第一节实验课，就是大概介绍了一下实验基地的注意事项，第一次听Shuo的课，大受震撼。</p>
-<h4 id="肉身划水"><a href="#肉身划水" class="headerlink" title="肉身划水"></a>肉身划水</h4><p>报了这周四的游泳测试，为此，周二晚上还专门去游泳馆练了一会，结果腰酸背痛，还不如不练。游泳测试本身倒是挺容易，会爬就行。</p>
-<p><img src="https://blog.hidariya.space/2021/05/14/week12/IMG_20210513_223226.jpg" alt="IMG_20210513_223226"></p>
+<h4 id="肉身划水">肉身划水</h4>
+<p>报了这周四的游泳测试，为此，周二晚上还专门去游泳馆练了一会，结果腰酸背痛，还不如不练。游泳测试本身倒是挺容易，会爬就行。</p>
+<figure>
+<img src="/.space//IMG_20210513_223226.jpg" alt="IMG_20210513_223226"><figcaption aria-hidden="true">IMG_20210513_223226</figcaption>
+</figure>
 <p>（牌子的错误使用方式）</p>
 <p>周五体育课测引体向上，到我的时候，居然有路过的小姐姐给我加油，这是我这些年来最接近现充的时刻了。</p>
-<p><img src="https://blog.hidariya.space/2021/05/14/week12/-3873a5afba62c4e9-1620986261926.jpg" alt="-3873a5afba62c4e9"></p>
+<figure>
+<img src="/.space//-3873a5afba62c4e9-1620986261926.jpg" alt="-3873a5afba62c4e9"><figcaption aria-hidden="true">-3873a5afba62c4e9</figcaption>
+</figure>
 <p>身体真的不如当年了，上了大学后运动量大减，这样下去身体只会越来越差。</p>
-<p><img src="https://blog.hidariya.space/2021/05/14/week12/1620798676066.jpeg" alt="1620798676066"></p>
+<figure>
+<img src="/.space//1620798676066.jpeg" alt="1620798676066"><figcaption aria-hidden="true">1620798676066</figcaption>
+</figure>
 <p>这周还没有过完，明天周六是书院学生节，到时候学生节的内容应该可以专门发一篇贴。到时候再说吧。</p>
-<p><img src="https://blog.hidariya.space/2021/05/14/week12/mmexport1620579750320.jpg" alt="mmexport1620579750320"></p>
+<figure>
+<img src="/.space//mmexport1620579750320.jpg" alt="mmexport1620579750320"><figcaption aria-hidden="true">mmexport1620579750320</figcaption>
+</figure>
 <p>（太期待了）</p>
 
       
@@ -341,12 +459,18 @@
 <p>学生节MV去当了回群演，白嫖了奶茶，划拉了一会czy的吉他，手感比我的好不少，看来我得加钱。</p>
 <p>补完了巨人第二季，要不是谏山创，我昨天就能写完长文。</p>
 <p>舍友的绫波丽到了，在b站买的亚克力盒子都要60，我的盒子在淘宝买的才30，还比他的大。</p>
-<p><img src="https://blog.hidariya.space/2021/05/09/week11/IMG_20210514_162826.jpg" alt="IMG_20210514_162826"></p>
+<figure>
+<img src="/.space//IMG_20210514_162826.jpg" alt="IMG_20210514_162826"><figcaption aria-hidden="true">IMG_20210514_162826</figcaption>
+</figure>
 <p>（偷拍舍友老婆）</p>
-<p><img src="https://blog.hidariya.space/2021/05/09/week11/88802505_p0.jpg" alt="88802505_p0"></p>
+<figure>
+<img src="/.space//88802505_p0.jpg" alt="88802505_p0"><figcaption aria-hidden="true">88802505_p0</figcaption>
+</figure>
 <p>（再放一张生活照）</p>
 <p>下周是书院学生节，我作为一个fw，自然除了吃瓜干不了别的，到时候我就能切身体会到世界的参差了。</p>
-<p><img src="https://blog.hidariya.space/2021/05/09/week11/88902245_p0.jpg" alt="88902245_p0"></p>
+<figure>
+<img src="/.space//88902245_p0.jpg" alt="88902245_p0"><figcaption aria-hidden="true">88902245_p0</figcaption>
+</figure>
 
       
     </div>
@@ -415,7 +539,9 @@
 <p>悠闲的假期总是过得飞快，因为有一半的时间在梦里度过。起床，或泡面，或叫外卖，要是天气好，便出门走走，去清芬吃午饭。白天摸鱼，看剧，刷手机，更新无意义的博客，摸累了，便小憩一会，醒来再继续。到了晚上，才发觉复变还一题未写，长文还一字未动，便奋发图强，写了500字，然后告诉自己，“你的进度又不是线性的，到ddl那天肯定写得完”，于是心安理得大睡其觉。</p>
 <p>好在这两天我并非完全虚度。5.4晚上，我骑车前去六公里外的一家电影院看《指环王》第二部。三个小时整，很适合一个人忘我地度过。</p>
 <p>电影看完，我骑着车顺着北四环往回走。一个人，骑着没有灯的车， 融化在北京的夜里，感觉不到自己的存在。耳机里的BGM盖住了风声，让我感觉不像是在赶路，倒像是开了旁观者模式第一人称视角云游北京。这座我生活了快一年的城市，竟看上去如此遥远。</p>
-<p><img src="https://blog.hidariya.space/2021/05/05/5-4&5-5/IMG_20210504_204117.jpg" alt="IMG_20210504_204117"></p>
+<figure>
+<img src="/.space//IMG_20210504_204117.jpg" alt="IMG_20210504_204117"><figcaption aria-hidden="true">IMG_20210504_204117</figcaption>
+</figure>
 <p>一个人听着老歌走夜路的时候，总会变得多愁善感。眼眶似乎有点湿润，不知道是风沙吹进了眼睛里还是脑子里。</p>
 <p>假期还剩半个小时，等明早的太阳升起，一切照旧。</p>
 
@@ -485,63 +611,72 @@
           <p>开此贴，是想要分享一下在我这一年的大学生活中，给我很大帮助的那些软件技术资源，包括但不限于笔记软件，计算工具，文献检索工具等等。</p>
 <p>前两天我看到我们班的一个大佬仍然坚持手写实验报告，当然大佬的勇气可嘉，但是对于我来说，让我手写实验报告不如让我直接退课。工欲善其事必先利其器，对于我这样的懒狗更是如此。但是这些工具并不是人人都有的，许多人甚至不知道这些好东西的存在。尤其是大一新生，可能需要大量时间摸索。我在这里把我所拥有的赛博装备挂出来，也算是抛砖引玉吧。</p>
 <p>（注：标记[a]为安卓端，[w]为Windows端，[c]为Chrome插件，不加标记为网页，[]为跨平台，我没有任何苹果的硬件，故不考虑ios和mac端）</p>
-<h3 id="笔记工具"><a href="#笔记工具" class="headerlink" title="笔记工具"></a>笔记工具</h3><ul>
-<li><h4 id="手写笔记"><a href="#手写笔记" class="headerlink" title="手写笔记"></a>手写笔记</h4><ul>
+<h3 id="笔记工具">笔记工具</h3>
+<ul>
+<li><h4 id="手写笔记">手写笔记</h4>
+<ul>
 <li>纸笔 + 扫描全能王[a]</li>
 <li>Ink&amp;Paper[a]</li>
-</ul>
-</li>
-<li><h4 id="键盘输入笔记"><a href="#键盘输入笔记" class="headerlink" title="键盘输入笔记"></a>键盘输入笔记</h4><ul>
+</ul></li>
+<li><h4 id="键盘输入笔记">键盘输入笔记</h4>
+<ul>
 <li>OneNote[]</li>
 <li>Typora[w]（Markdown编辑器）</li>
+</ul></li>
 </ul>
-</li>
-</ul>
-<h3 id="计算工具"><a href="#计算工具" class="headerlink" title="计算工具"></a>计算工具</h3><ul>
+<h3 id="计算工具">计算工具</h3>
+<ul>
 <li>MATLAB[w]</li>
 <li>MATLAB Online</li>
 <li>Mathematica[w]</li>
 <li>Excel[]</li>
 </ul>
-<h3 id="网络学堂辅助"><a href="#网络学堂辅助" class="headerlink" title="网络学堂辅助"></a>网络学堂辅助</h3><ul>
+<h3 id="网络学堂辅助">网络学堂辅助</h3>
+<ul>
 <li>Learn Helper[c]（直观显示ddl）</li>
 <li>LearnX[a]（同步课表和ddl到日历）</li>
 </ul>
-<h3 id="科学上网"><a href="#科学上网" class="headerlink" title="科学上网"></a>科学上网</h3><ul>
+<h3 id="科学上网">科学上网</h3>
+<ul>
 <li>V2ray[]</li>
 <li>Proxifier[w]</li>
 <li>谷歌上网助手[c]</li>
 </ul>
-<h3 id="文献检索"><a href="#文献检索" class="headerlink" title="文献检索"></a>文献检索</h3><ul>
-<li><h4 id="资料库"><a href="#资料库" class="headerlink" title="资料库"></a>资料库</h4><ul>
+<h3 id="文献检索">文献检索</h3>
+<ul>
+<li><h4 id="资料库">资料库</h4>
+<ul>
 <li>中国知网</li>
-<li>Web of  Science</li>
+<li>Web of Science</li>
 <li>ResearchGate</li>
 <li>ADS</li>
 <li>Wikipedia</li>
 <li>清华大学图书馆</li>
-</ul>
-</li>
-<li><h4 id="辅助工具"><a href="#辅助工具" class="headerlink" title="辅助工具"></a>辅助工具</h4><ul>
+</ul></li>
+<li><h4 id="辅助工具">辅助工具</h4>
+<ul>
 <li>EndNote Click[c]（文献PDF获取）</li>
 <li>Google 翻译[c]（划词翻译）</li>
+</ul></li>
 </ul>
-</li>
-</ul>
-<h3 id="LaTeX工具"><a href="#LaTeX工具" class="headerlink" title="LaTeX工具"></a>LaTeX工具</h3><ul>
+<h3 id="latex工具">LaTeX工具</h3>
+<ul>
 <li>Overleaf（在线编辑LaTeX，不用配环境）</li>
 <li>VSCode[w]（离线编辑LaTeX）</li>
 <li>Excel2LaTeX[w]（Excel表格导入LaTeX）</li>
 </ul>
-<h3 id="文件同步"><a href="#文件同步" class="headerlink" title="文件同步"></a>文件同步</h3><ul>
+<h3 id="文件同步">文件同步</h3>
+<ul>
 <li>Syncthing[]（跨平台自动同步文件）</li>
 <li>Seafile[] + 清华云盘</li>
 </ul>
-<h3 id="服务器运维"><a href="#服务器运维" class="headerlink" title="服务器运维"></a>服务器运维</h3><ul>
+<h3 id="服务器运维">服务器运维</h3>
+<ul>
 <li>FinalShell[w]</li>
 <li>阿里云[]</li>
 </ul>
-<h3 id="其他杂项"><a href="#其他杂项" class="headerlink" title="其他杂项"></a>其他杂项</h3><ul>
+<h3 id="其他杂项">其他杂项</h3>
+<ul>
 <li>GitHub（全球最大同性交友网站）</li>
 <li>Notepad++[w]</li>
 <li>按键精灵[w]（简单的自动化）</li>
@@ -623,18 +758,24 @@
     
     <div class="post-body" itemprop="articleBody">
           <p>天大的老同学大阳来北京了，这不得好好接待一下。我和另外三个高中同班同学就这样和大阳一起快活了一天</p>
-<h4 id="奥体的烤鸭"><a href="#奥体的烤鸭" class="headerlink" title="奥体的烤鸭"></a>奥体的烤鸭</h4><p>我们在奥体公园附近一家烤鸭店吃了午饭，好贵（废话）</p>
+<h4 id="奥体的烤鸭">奥体的烤鸭</h4>
+<p>我们在奥体公园附近一家烤鸭店吃了午饭，好贵（废话）</p>
 <p>（这里应该有烤鸭的照片，吃的太快，没来得及拍）</p>
 <p>吃完饭，我们去奥体公园转了一圈，聊天叙旧。毕竟没有预约，也就只能逛逛公园广场这样。</p>
-<h4 id="西单的电玩"><a href="#西单的电玩" class="headerlink" title="西单的电玩"></a>西单的电玩</h4><p>散了一会步，我们一行人坐地铁去了西单，去感受一下大城市的灯红酒绿。</p>
+<h4 id="西单的电玩">西单的电玩</h4>
+<p>散了一会步，我们一行人坐地铁去了西单，去感受一下大城市的灯红酒绿。</p>
 <p>一群直男逛商场，当然是直奔乐高柜台了。乐高千年隼真是太棒了，只是钱包不允许我有什么想法。</p>
 <p>逛差不多，我们就去了一家电玩城，打了一下午电动</p>
-<p><img src="https://blog.hidariya.space/2021/05/04/5-3/addf7bc87f97de4405e692057f2c6ecb.jpg"></p>
+<p><img src="/.space//addf7bc87f97de4405e692057f2c6ecb.jpg"></p>
 <p>（放错了，不是这个电动）</p>
-<p><img src="https://blog.hidariya.space/2021/05/04/5-3/OIP.tbK9AqrAjVEP4Y7dOZ7fvwHaEa" alt="你又在打电动哦 的图像结果"></p>
+<figure>
+<img src="/.space//OIP.tbK9AqrAjVEP4Y7dOZ7fvwHaEa" alt="你又在打电动哦 的图像结果"><figcaption aria-hidden="true">你又在打电动哦 的图像结果</figcaption>
+</figure>
 <p>（懂的都懂）</p>
 <p>第一次打拳皇，感受到了街机的乐趣。两个人可以这么打上一天，是真的有意思。</p>
-<p><img src="https://blog.hidariya.space/2021/05/04/5-3/OIP.aDqvLMdDRyXb3Rk8xSB4zQAAAA" alt="拳皇 的图像结果"></p>
+<figure>
+<img src="/.space//OIP.aDqvLMdDRyXb3Rk8xSB4zQAAAA" alt="拳皇 的图像结果"><figcaption aria-hidden="true">拳皇 的图像结果</figcaption>
+</figure>
 <p>（不存在的青春回来了）</p>
 <p>5个人玩了100多个币，意犹未尽。之后我们在西单吃了寿司当晚饭，好贵（废话）</p>
 <p>就这样，我度过了极高消费的一天。至此，我五一假期的所有出行应该就结束了，剩下的两天估计就睡睡觉摸摸鱼了，不会有什么值得更新的东西，毕竟还有长文初稿等着我呢。</p>
@@ -709,18 +850,29 @@
     
     <div class="post-body" itemprop="articleBody">
           <p>5.2过得相当充实，我放假前万万没想到，我居然会在三天内爬两次山，还是这样的山</p>
-<h4 id="爬"><a href="#爬" class="headerlink" title="爬"></a>爬</h4><p>一大早，我和cyy，lwt，还有人大的zcr，一起去了西山森林公园。这地方虽然开发的不是很完善，但这是五一少有的不用预约就能直接去的景点了。</p>
+<h4 id="爬">爬</h4>
+<p>一大早，我和cyy，lwt，还有人大的zcr，一起去了西山森林公园。这地方虽然开发的不是很完善，但这是五一少有的不用预约就能直接去的景点了。</p>
 <p>一开始，我们走的是这样的路</p>
-<p><img src="https://blog.hidariya.space/2021/05/03/5-2/mmexport1620105821674.jpg" alt="mmexport1620105821674"></p>
+<figure>
+<img src="/.space//mmexport1620105821674.jpg" alt="mmexport1620105821674"><figcaption aria-hidden="true">mmexport1620105821674</figcaption>
+</figure>
 <p>走着走着，黄色的树林里分出了两条路。正如那首诗一样，我们毅然选择了人迹罕至的那条，也不好好想想为什么人迹罕至。</p>
 <p>走着走着，我们一行人逐渐意识到了事情的严重性。因为脚下的路逐渐变成了这样</p>
-<p><img src="https://blog.hidariya.space/2021/05/03/5-2/mmexport1620105833686.jpg" alt="mmexport1620105833686"></p>
+<figure>
+<img src="/.space//mmexport1620105833686.jpg" alt="mmexport1620105833686"><figcaption aria-hidden="true">mmexport1620105833686</figcaption>
+</figure>
 <p>本着有困难要上，没有困难创造困难也要上的精神，我们紧密团结在cyy周围，手脚并用，连滚带爬，艰难的爬上了山顶（事后发现并不是山顶，大路通向的才是山顶）</p>
-<p><img src="https://blog.hidariya.space/2021/05/03/5-2/mmexport1619954332001.jpg" alt="mmexport1619954332001"></p>
+<figure>
+<img src="/.space//mmexport1619954332001.jpg" alt="mmexport1619954332001"><figcaption aria-hidden="true">mmexport1619954332001</figcaption>
+</figure>
 <p>（天然的手机支架）</p>
-<p><img src="https://blog.hidariya.space/2021/05/03/5-2/mmexport1620107656870.jpg" alt="mmexport1620107656870"></p>
+<figure>
+<img src="/.space//mmexport1620107656870.jpg" alt="mmexport1620107656870"><figcaption aria-hidden="true">mmexport1620107656870</figcaption>
+</figure>
 <p>（cyy吹口琴的帅照）</p>
-<p><img src="https://blog.hidariya.space/2021/05/03/5-2/mmexport1619954309211.jpg" alt="mmexport1619954309211"></p>
+<figure>
+<img src="/.space//mmexport1619954309211.jpg" alt="mmexport1619954309211"><figcaption aria-hidden="true">mmexport1619954309211</figcaption>
+</figure>
 <p>（一群憨憨在滚下山的边缘试探）</p>
 <p>吹着口琴唱着歌，吃着自热饭打着牌，头一次爬这么荒的山，还是挺刺激的，下次不会再来了。</p>
 
@@ -794,15 +946,21 @@
     
     <div class="post-body" itemprop="articleBody">
           <p>五一这一天我并没有出去玩，没什么好记的，就象征性写两句</p>
-<h4 id="睡大觉"><a href="#睡大觉" class="headerlink" title="睡大觉"></a>睡大觉</h4><p>一觉睡到中午，泡面当午饭，腿痛，但神清气爽</p>
+<h4 id="睡大觉">睡大觉</h4>
+<p>一觉睡到中午，泡面当午饭，腿痛，但神清气爽</p>
 <p>（此处放一张冒着香气的泡面特写）</p>
-<h4 id="摸大鱼"><a href="#摸大鱼" class="headerlink" title="摸大鱼"></a>摸大鱼</h4><p>吃完午饭，就开始水费曼的预习报告和作业。预习报告只有一章，大喜。没有扎实的分析力学基础，费曼作业是真的不会写。遂照抄朗道，不会的地方伪证糊弄过去。</p>
+<h4 id="摸大鱼">摸大鱼</h4>
+<p>吃完午饭，就开始水费曼的预习报告和作业。预习报告只有一章，大喜。没有扎实的分析力学基础，费曼作业是真的不会写。遂照抄朗道，不会的地方伪证糊弄过去。</p>
 <p>（少年，你渴望力量吗？）</p>
 <p>搞定费曼后，继续我的巨人补完计划。连看了3集，补完了巨人的第一季。动画质量相当高，相当推荐，别看漫画就行。</p>
 <p>另外，很早之前我看另外一部番的时候，就被弹幕剧透了“我铠他超”，严重影响了补番体验。希望我的舍友以及其他看过巨人的别再剧透了，不要不识抬举。</p>
-<h4 id="吃大饭"><a href="#吃大饭" class="headerlink" title="吃大饭"></a>吃大饭</h4><p>我和我的舍友一致认为这节过得实在太水了，于是我和舍友我们三个去了学校外面的一家新疆餐厅吃了顿饭，好贵，后悔。</p>
-<h4 id="像大星星"><a href="#像大星星" class="headerlink" title="像大星星"></a>像大星星</h4><p>晚上和cyy（男）相约紫操弹琴，快乐。我一如既往的菜，还好紫操的现充们都注意不到我的存在。指弹还是太难了，我不如学学唱歌去搞弹唱，这样街头卖艺的时候效果还能好一点。</p>
-<p><img src="https://blog.hidariya.space/2021/05/03/5-1/1609833964152.jpeg" alt="1609833964152"></p>
+<h4 id="吃大饭">吃大饭</h4>
+<p>我和我的舍友一致认为这节过得实在太水了，于是我和舍友我们三个去了学校外面的一家新疆餐厅吃了顿饭，好贵，后悔。</p>
+<h4 id="像大星星">像大星星</h4>
+<p>晚上和cyy（男）相约紫操弹琴，快乐。我一如既往的菜，还好紫操的现充们都注意不到我的存在。指弹还是太难了，我不如学学唱歌去搞弹唱，这样街头卖艺的时候效果还能好一点。</p>
+<figure>
+<img src="/.space//1609833964152.jpeg" alt="1609833964152"><figcaption aria-hidden="true">1609833964152</figcaption>
+</figure>
 <p>晚上10点熄灯，夜幕覆盖了整个紫操，cyy摸黑弹奏了一曲《Like a star》，躺在紫操的假草上听着指弹仰望着星空，真有情调</p>
 <p>5.1就这么过去了，朋友圈里有去音乐节的，去上海的，去追星的，去找npy的，而我，连五道口都没能出去。</p>
 
@@ -870,20 +1028,29 @@
     
     <div class="post-body" itemprop="articleBody">
           <p>既然更新了，说明今天挺闲的，哪都没去。好在昨天还是挺充实的，就简单记录一下昨天吧。</p>
-<h4 id="香山之行"><a href="#香山之行" class="headerlink" title="香山之行"></a>香山之行</h4><p>致理几个班组织去香山团建，也算是团支部活动吧。一大早出发，到那就开始下雨，享受了一把冒雨爬山的极致体验。路上看见小学生春游，好家伙，小学生比我还壮，要不是带个红领巾根本看不出是小学生，时代变了。</p>
-<p><img src="https://blog.hidariya.space/2021/05/01/4-30/mmexport1619866231282.jpg" alt="mmexport1619866231282"></p>
+<h4 id="香山之行">香山之行</h4>
+<p>致理几个班组织去香山团建，也算是团支部活动吧。一大早出发，到那就开始下雨，享受了一把冒雨爬山的极致体验。路上看见小学生春游，好家伙，小学生比我还壮，要不是带个红领巾根本看不出是小学生，时代变了。</p>
+<figure>
+<img src="/.space//mmexport1619866231282.jpg" alt="mmexport1619866231282"><figcaption aria-hidden="true">mmexport1619866231282</figcaption>
+</figure>
 <p>到了山顶，雨大概停了，我们拿着均匀润湿的院旗拍了合照，并试图叫外卖，遗憾地发现山顶没信号。</p>
-<p><img src="https://blog.hidariya.space/2021/05/01/4-30/mmexport1619866252281.jpg" alt="mmexport1619866252281"></p>
-<p><img src="https://blog.hidariya.space/2021/05/01/4-30/mmexport1619866286122.jpg" alt="mmexport1619866286122"></p>
+<figure>
+<img src="/.space//mmexport1619866252281.jpg" alt="mmexport1619866252281"><figcaption aria-hidden="true">mmexport1619866252281</figcaption>
+</figure>
+<figure>
+<img src="/.space//mmexport1619866286122.jpg" alt="mmexport1619866286122"><figcaption aria-hidden="true">mmexport1619866286122</figcaption>
+</figure>
 <p>（在现场，我就是那根棍）</p>
 <p>在山上找了个稍微开阔的地方，我们的野餐开始了。雨后清新的空气里，大家吃着火锅磕着糖，其乐融融。</p>
 <p>（图不放了，懂的都懂）</p>
 <p>就这样，快活的半天就过去了。最大的感受，就是体力真的不比当年了，身体真是一天不如一天。</p>
-<h4 id="悬崖之上"><a href="#悬崖之上" class="headerlink" title="悬崖之上"></a>悬崖之上</h4><p>小睡了两个小时之后，我就和fhf（男）出去看电影了。张艺谋的新作《悬崖之上》，总体观感还是非常优秀的，画面精美，智商在线，演技几乎在线，剧情扣人心弦，就是角色有点多，那些个演员我不太能认清。我在前半段主要靠发型认人，当所有人带上帽子枪战的时候，好家伙，我是谁，我在哪，我杀了谁，谁又杀了我？</p>
+<h4 id="悬崖之上">悬崖之上</h4>
+<p>小睡了两个小时之后，我就和fhf（男）出去看电影了。张艺谋的新作《悬崖之上》，总体观感还是非常优秀的，画面精美，智商在线，演技几乎在线，剧情扣人心弦，就是角色有点多，那些个演员我不太能认清。我在前半段主要靠发型认人，当所有人带上帽子枪战的时候，好家伙，我是谁，我在哪，我杀了谁，谁又杀了我？</p>
 <p>哈尔滨的风景拍的非常不错，有上海租界那种风格，再加上从头到尾连绵不断的大雪，氛围非常好。</p>
 <p>（剧照懒得找，脑补吧）</p>
 <p>完事后我们去五道口吃炸酱面，结束了这极其充实的一天。</p>
-<h4 id="关于我这么久都没有域名今天突然有了域名这档事"><a href="#关于我这么久都没有域名今天突然有了域名这档事" class="headerlink" title="关于我这么久都没有域名今天突然有了域名这档事"></a>关于我这么久都没有域名今天突然有了域名这档事</h4><p>关于域名，因为我之前用的是阿里云国内的服务器，域名解析是需要公安备案的，我一直懒得搞，所以很长时间没有域名。今天我想开了，算了吧，我不用阿里云了。我投靠了GitHub Page，不用备案，我的空间终于是有域名了。关于这个名字，左矢的英文过于直白，所以我选择了日文罗马音直译，hidari=左，ya=矢（当然这并不是左矢的术语，左矢的术语应该是ブラーベクトル）</p>
+<h4 id="关于我这么久都没有域名今天突然有了域名这档事">关于我这么久都没有域名今天突然有了域名这档事</h4>
+<p>关于域名，因为我之前用的是阿里云国内的服务器，域名解析是需要公安备案的，我一直懒得搞，所以很长时间没有域名。今天我想开了，算了吧，我不用阿里云了。我投靠了GitHub Page，不用备案，我的空间终于是有域名了。关于这个名字，左矢的英文过于直白，所以我选择了日文罗马音直译，hidari=左，ya=矢（当然这并不是左矢的术语，左矢的术语应该是ブラーベクトル）</p>
 <p>感觉这个博客内容越来越接近朋友圈了，以后得发点博客应该有的技术性内容才好。</p>
 
       
@@ -956,19 +1123,28 @@
     
     <div class="post-body" itemprop="articleBody">
           <p>这两周事情相当多，全写出来可能就是流水账了，我就挑有乐子的写吧</p>
-<h4 id="水木非凡境"><a href="#水木非凡境" class="headerlink" title="水木非凡境"></a>水木非凡境</h4><p>学校在期中周出的官方手游，也不能叫手游，官方定位应该是教育软件，鉴于挺有乐子的，这里暂且称作手游。有一说一，建模还是挺不错的。虽然建筑没有做碰撞箱，没什么交互，地图这么小还分成几块，全是空气墙，寻路非常怪，飞天遁地，领带穿胸，但还凑合。写了个按键精灵脚本，结合安卓模拟器实现快速飞天，一天的乐子全在这了。结果第二天单车飞天的特性被修了，乐子没了。</p>
-<p><img src="https://blog.hidariya.space/2021/04/30/week8_10/ft.jpg" alt="ft"></p>
-<h4 id="化工系学长来访"><a href="#化工系学长来访" class="headerlink" title="化工系学长来访"></a>化工系学长来访</h4><p>从主楼封锁到西操，路口便衣，保镖人墙，宿舍封窗户，洒水车洗地，一教二教的课迁移，树洞停服，我的舍友被拉去自发翘课欢迎。不必多言，懂得都懂。</p>
-<p><img src="https://blog.hidariya.space/2021/04/30/week8_10/h.jpeg"></p>
-<h4 id="焦距"><a href="#焦距" class="headerlink" title="焦距"></a>焦距</h4><p>怎会有如此窒息的实验报告，绝了，比波尔还要窒息。校庆那几天，我的体验被这玩意严重影响。23号看彩排的时候我带了pad写实验报告，还把笔给弄丢了。我不做人了！焦距！</p>
-<h4 id="进击的巨人"><a href="#进击的巨人" class="headerlink" title="进击的巨人"></a>进击的巨人</h4><p><img src="https://blog.hidariya.space/2021/04/30/week8_10/jr.png"></p>
+<h4 id="水木非凡境">水木非凡境</h4>
+<p>学校在期中周出的官方手游，也不能叫手游，官方定位应该是教育软件，鉴于挺有乐子的，这里暂且称作手游。有一说一，建模还是挺不错的。虽然建筑没有做碰撞箱，没什么交互，地图这么小还分成几块，全是空气墙，寻路非常怪，飞天遁地，领带穿胸，但还凑合。写了个按键精灵脚本，结合安卓模拟器实现快速飞天，一天的乐子全在这了。结果第二天单车飞天的特性被修了，乐子没了。</p>
+<figure>
+<img src="/.space//ft.jpg" alt="ft"><figcaption aria-hidden="true">ft</figcaption>
+</figure>
+<h4 id="化工系学长来访">化工系学长来访</h4>
+<p>从主楼封锁到西操，路口便衣，保镖人墙，宿舍封窗户，洒水车洗地，一教二教的课迁移，树洞停服，我的舍友被拉去自发翘课欢迎。不必多言，懂得都懂。</p>
+<p><img src="/.space//h.jpeg"></p>
+<h4 id="焦距">焦距</h4>
+<p>怎会有如此窒息的实验报告，绝了，比波尔还要窒息。校庆那几天，我的体验被这玩意严重影响。23号看彩排的时候我带了pad写实验报告，还把笔给弄丢了。我不做人了！焦距！</p>
+<h4 id="进击的巨人">进击的巨人</h4>
+<p><img src="/.space//jr.png"></p>
 <p>仿佛49年入国民党，我这两天开始补巨人了。按舍友的忠告，补了前三季我应该就不会往后看了。第一季快看完了，好看！如果我实验报告写不完，那全部都怪谏山创。</p>
-<h4 id="校庆"><a href="#校庆" class="headerlink" title="校庆"></a>校庆</h4><p>作为一名fw，我并没有怎么参与这盛大的活动，没有当志愿者，也没有现场票。23号去紫操看了彩排现场，全要素彩排根本就不全，李健也没看到。24号游园会白嫖了一圈，抽到了扑克牌，还在美院大佬摊位要到了个扇面。25号在东操团体操打拳，在校庆的直播里占了好几个像素点。</p>
+<h4 id="校庆">校庆</h4>
+<p>作为一名fw，我并没有怎么参与这盛大的活动，没有当志愿者，也没有现场票。23号去紫操看了彩排现场，全要素彩排根本就不全，李健也没看到。24号游园会白嫖了一圈，抽到了扑克牌，还在美院大佬摊位要到了个扇面。25号在东操团体操打拳，在校庆的直播里占了好几个像素点。</p>
 <p>热闹是他们的，我只想着白嫖。</p>
-<p><img src="https://blog.hidariya.space/2021/04/30/week8_10/dszh.jpg"></p>
-<h4 id="费曼"><a href="#费曼" class="headerlink" title="费曼"></a>费曼</h4><p>这周三轮到我主讲了，PPT整了个烂活，除了我舍友，似乎没人认出这个美术风格，都说我是抽象带师。问题不大，至少不觉得难看就行。</p>
-<p><img src="https://blog.hidariya.space/2021/04/30/week8_10/eva.jpg"></p>
-<h4 id="一晚四个ddl"><a href="#一晚四个ddl" class="headerlink" title="一晚四个ddl"></a>一晚四个ddl</h4><p>就昨天晚上，我肝完了费曼讨论纪要＋写沟长文选题＋复变上周作业＋主题团日PPT，真就一个人一个晚上一个奇迹。其实也算不上奇迹，至少我成就感还是蛮大的，看来ddl还真是第一生产力。</p>
+<p><img src="/.space//dszh.jpg"></p>
+<h4 id="费曼">费曼</h4>
+<p>这周三轮到我主讲了，PPT整了个烂活，除了我舍友，似乎没人认出这个美术风格，都说我是抽象带师。问题不大，至少不觉得难看就行。</p>
+<p><img src="/.space//eva.jpg"></p>
+<h4 id="一晚四个ddl">一晚四个ddl</h4>
+<p>就昨天晚上，我肝完了费曼讨论纪要＋写沟长文选题＋复变上周作业＋主题团日PPT，真就一个人一个晚上一个奇迹。其实也算不上奇迹，至少我成就感还是蛮大的，看来ddl还真是第一生产力。</p>
 <p>写这篇的时候，我突然意识到我用博客记录生活这件事，有它的结构性矛盾。如果我现实生活过得非常充实，就没有时间也没有欲望像这样码字了；如果现实生活过得太摸，就没有什么记录的价值了。综上，这个博客是没有意义的。</p>
 <p>五一到了，不知道还会不会更新。如果不更新，说明我过了一个充实精彩的假期，希望如此吧。</p>
 
@@ -1042,22 +1218,28 @@
     
     <div class="post-body" itemprop="articleBody">
           <p>期中周结束了，总算是能放松一点了，不妨稍微总结一下上半学期都干了什么。</p>
-<h4 id="社团"><a href="#社团" class="headerlink" title="社团"></a>社团</h4><p>寒假的时候我大约的确就当上了THUnion的管理层，我都没反应过来，啪的一下就到了这个位置。虽说是管理，其实我并不是很擅长和人打交道，老社恐了，比起管理员，我还是更希望当个管服务器的运维工具人。</p>
+<h4 id="社团">社团</h4>
+<p>寒假的时候我大约的确就当上了THUnion的管理层，我都没反应过来，啪的一下就到了这个位置。虽说是管理，其实我并不是很擅长和人打交道，老社恐了，比起管理员，我还是更希望当个管服务器的运维工具人。</p>
 <p>刚开学没多久，就是春季的百团大战。都第二学期了，已经没有一腔热情的新生来给我们骗了。我还准备了本地的服务器存档给大家参观，结果，大家都是老社恐了，基本上没人想在众目睽睽之下打游戏。招新最后还是变成了部员的线下面基大会，唯一的收获，大概是部员的可爱女装照吧。</p>
 <p><img src="/images/nvzhuang.jpg"></p>
 <p>清明节假期，社团的服务器正式迁到了我的名下，域名将来也会过户到我名下。那两天我折腾了好长时间才搞定乱七八糟的各种问题。完事之后，我们还剥削了一下旧服务器的剩余价值，在旧服上激情uhc（激烈的烫头大战）</p>
 <p><img src="/images/ttdz.png"></p>
 <p>社团就是一群同好聚在一起，快乐整活的地方。能认识这些同好，还是挺不错的。</p>
-<h4 id="日语"><a href="#日语" class="headerlink" title="日语"></a>日语</h4><p>寒假的时候我一时兴起就自学了一点日语，就是图一乐。到寒假结束，大概是自学了小半本的标日初级上册，进度还是挺慢的。日本語は本当に難しい。</p>
+<h4 id="日语">日语</h4>
+<p>寒假的时候我一时兴起就自学了一点日语，就是图一乐。到寒假结束，大概是自学了小半本的标日初级上册，进度还是挺慢的。日本語は本当に難しい。</p>
 <p>我的高中同学fhf选修上了日语二外课，于是乎，在他的介绍下，我快乐蹭课的日子开始了。每周的两节日语课我只能上一节，根本跟不上进度。蹭课比起自学还是好的多，老师会教很多书上没有的表达，讲的很有意思，真的收获很大。我下学期也考虑冲一冲日语二外。</p>
 <p>说到蹭课，我直到这学期才意识到蹭课是多么的快乐——不写作业，不会被点，想听就听，不听就跑路——除了没有学分，简直太完美了。树洞上有这学期的上课地点清单，等学会上传文件了就把文件放上来。</p>
-<h4 id="班委"><a href="#班委" class="headerlink" title="班委"></a>班委</h4><p>虽然说我还是学委来着，但是这学期的学委工作几乎都被nxy大爷接手了，我已经被架空。被架空还是挺开心的。</p>
+<h4 id="班委">班委</h4>
+<p>虽然说我还是学委来着，但是这学期的学委工作几乎都被nxy大爷接手了，我已经被架空。被架空还是挺开心的。</p>
 <p>物02的研讨班搞了几次，效果感觉还行，dm那是真的强，微分几何不比高微有意思多了。</p>
 <p><img src="/images/dm.jpg"></p>
-<h4 id="课业"><a href="#课业" class="headerlink" title="课业"></a>课业</h4><p>之前选的课掉了挺多，补退选的时候我脑子一抽，选了个《恒星与行星》。当时想的是用全英文课顶英语学分，现在看来还是草率了。这课是相当硬的，和天导非常不一样，这个课更偏物理，作业动不动就让你用MATLAB数值求解。希望能撑过后半学期吧。</p>
+<h4 id="课业">课业</h4>
+<p>之前选的课掉了挺多，补退选的时候我脑子一抽，选了个《恒星与行星》。当时想的是用全英文课顶英语学分，现在看来还是草率了。这课是相当硬的，和天导非常不一样，这个课更偏物理，作业动不动就让你用MATLAB数值求解。希望能撑过后半学期吧。</p>
 <p>基物实验和写沟可以并列这学期最痛苦的课了。简直了，我就不细说了，去写实验报告了。</p>
-<h4 id="吉他"><a href="#吉他" class="headerlink" title="吉他"></a>吉他</h4><p>《Sunflower》完全没什么进步，离谱，“勉强能弹”和“会弹”之间有极其巨大的鸿沟，搞得我都不想练了。最近在练郑成河的《いつも何度でも》前面一段，就是全曲唯一阳间的一段，感觉还行。</p>
-<h4 id="摸鱼"><a href="#摸鱼" class="headerlink" title="摸鱼"></a>摸鱼</h4><p>这学期没怎么出去玩过，就一个人出去看了三次电影。在校内偶尔去和THUnion的打桌游（桌游部石锤了）。在舍友的指导下，学会了打雀魂，根本停不下来，这不比群星有意思？</p>
+<h4 id="吉他">吉他</h4>
+<p>《Sunflower》完全没什么进步，离谱，“勉强能弹”和“会弹”之间有极其巨大的鸿沟，搞得我都不想练了。最近在练郑成河的《いつも何度でも》前面一段，就是全曲唯一阳间的一段，感觉还行。</p>
+<h4 id="摸鱼">摸鱼</h4>
+<p>这学期没怎么出去玩过，就一个人出去看了三次电影。在校内偶尔去和THUnion的打桌游（桌游部石锤了）。在舍友的指导下，学会了打雀魂，根本停不下来，这不比群星有意思？</p>
 <p>最近两周又有了很多有意思的事，下次再更吧。</p>
 
       
@@ -1140,7 +1322,38 @@
 
 
 
-  
+  <script>
+  if (typeof MathJax === 'undefined') {
+    window.MathJax = {
+      tex: {
+        inlineMath: {'[+]': [['$', '$']]},
+        tags: 'ams'
+      },
+      options: {
+        renderActions: {
+          insertedScript: [200, () => {
+            document.querySelectorAll('mjx-container').forEach(node => {
+              const target = node.parentNode;
+              if (target.nodeName.toLowerCase() === 'li') {
+                target.parentNode.classList.add('has-jax');
+              }
+            });
+          }, '', false]
+        }
+      }
+    };
+    const script = document.createElement('script');
+    script.src = 'https://cdn.jsdelivr.net/npm/mathjax@3.1.2/es5/tex-mml-chtml.js';
+    script.defer = true;
+    document.head.appendChild(script);
+  } else {
+    MathJax.startup.document.state(0);
+    MathJax.typesetClear();
+    MathJax.texReset();
+    MathJax.typeset();
+  }
+</script>
+
 
 
 </body>
