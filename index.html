@@ -216,7 +216,7 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://blog.hidariya.space/2021/09/15/note/qm1/">
+    <link itemprop="mainEntityOfPage" href="https://blog.hidariya.space/note/qm1/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -229,7 +229,7 @@
     </span>
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
-          <a href="/2021/09/15/note/qm1/" class="post-title-link" itemprop="url">量子力学量力学（1）</a>
+          <a href="/note/qm1/" class="post-title-link" itemprop="url">量子力学量力学（1）</a>
         </h2>
 
         <div class="post-meta-container">
@@ -247,7 +247,7 @@
           <i class="far fa-calendar-check"></i>
         </span>
         <span class="post-meta-item-text">更新于</span>
-        <time title="修改时间：2021-09-18 12:23:45" itemprop="dateModified" datetime="2021-09-18T12:23:45+08:00">2021-09-18</time>
+        <time title="修改时间：2021-09-18 12:27:33" itemprop="dateModified" datetime="2021-09-18T12:27:33+08:00">2021-09-18</time>
       </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -260,7 +260,7 @@
     </span>
 
   
-    <span id="/2021/09/15/note/qm1/" class="post-meta-item leancloud_visitors" data-flag-title="量子力学量力学（1）" title="阅读次数">
+    <span id="/note/qm1/" class="post-meta-item leancloud_visitors" data-flag-title="量子力学量力学（1）" title="阅读次数">
       <span class="post-meta-item-icon">
         <i class="far fa-eye"></i>
       </span>
@@ -281,7 +281,7 @@
 <p>参考书目：格里菲斯，费曼第三卷，科恩</p>
 <p>下面进入正题——</p>
 <h2 id="波函数">波函数</h2>
-<h4 id="概率幅与波函数">概率幅与波函数</h4>
+<h3 id="概率幅与波函数">概率幅与波函数</h3>
 <p>按照哥本哈根学派的解释，量子事件随机发生，每个事件对于一个<strong>复数</strong><span class="math inline">\(\psi\)</span> ，称为<strong>概率幅</strong>。事件的发生概率即对应概率幅的模方<span class="math inline">\(P=|\psi|^2\)</span>。</p>
 <p>所谓“事件”，可以是离散的（如能级、双缝通道），也可以是连续的（如位置、动量），就是概率和概率密度的区别。</p>
 <p>不观测时，不同状态的<span class="math inline">\(\psi\)</span>可以叠加，<span class="math inline">\(P=|\psi_1+\psi_2|^2\)</span> 。</p>
@@ -290,7 +290,7 @@
 <p>波函数必须满足归一化条件 <span class="math display">\[
 \int_\Omega|\psi|^2d^3r=1
 \]</span></p>
-<h4 id="德布罗意关系">德布罗意关系</h4>
+<h3 id="德布罗意关系">德布罗意关系</h3>
 <p>最简单的单色平面波方程： <span class="math display">\[
 \psi(\vec r,t)\propto e^{i(\vec k\cdot\vec r-\omega t)}
 \]</span> 有德布罗意关系 <span class="math display">\[
@@ -303,7 +303,7 @@ E=\hbar\omega
 <li>这个函数的模方不可积，在数学上无法归一化，不能表示概率</li>
 </ol>
 <p>当然，不存在并不妨碍我们的使用。</p>
-<h4 id="薛定谔方程">薛定谔方程</h4>
+<h3 id="薛定谔方程">薛定谔方程</h3>
 <p>从单色平面波 <span class="math inline">\(\vec p=\hbar \vec k\)</span> 可以推出 <span class="math display">\[
 \vec p\psi=-i\hbar\nabla\psi
 \]</span> 我们强行把<span class="math inline">\(\psi\)</span>约掉，把动量变成了<strong>动量算符</strong> <span class="math display">\[
@@ -318,7 +318,7 @@ i\hbar\frac\partial{\partial t}\psi=\hat H\psi
 \]</span> 代入哈密顿算符得到薛定谔方程的完全体： <span class="math display">\[
 i\hbar\frac\partial{\partial t}\psi=-\frac{\hbar^2}{2m}\nabla^2\psi+V\psi
 \]</span></p>
-<h4 id="物理量的期望值">物理量的期望值</h4>
+<h3 id="物理量的期望值">物理量的期望值</h3>
 <p>一坨波函数没有一个确定的位置，只能有位置的<strong>期望</strong> <span class="math display">\[
 &lt;x&gt;=\int_\Omega\psi^* x\psi d^3r
 \]</span> 位置还可以有交换律，动量算符就没法交换了<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a></p>
@@ -331,7 +331,7 @@ i\hbar\frac\partial{\partial t}\psi=-\frac{\hbar^2}{2m}\nabla^2\psi+V\psi
 <p><strong>方差</strong>同理 <span class="math display">\[
 \sigma^2_x=&lt;x^2&gt;-&lt;x&gt;^2
 \]</span></p>
-<h4 id="不确定原理">不确定原理</h4>
+<h3 id="不确定原理">不确定原理</h3>
 <p>取一个高斯分布的波函数<span class="math inline">\(\psi\propto e^{-\lambda x^2}\)</span>，可以得到 <span class="math display">\[
 \sigma_x\sigma_{p_x}\ge\frac{\hbar}2
 \]</span> 一般取大于，只有高斯分布才取等。</p>
@@ -371,7 +371,7 @@ i\hbar\frac\partial{\partial t}\psi=-\frac{\hbar^2}{2m}\nabla^2\psi+V\psi
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://blog.hidariya.space/2021/08/17/thewitcher3/">
+    <link itemprop="mainEntityOfPage" href="https://blog.hidariya.space/thewitcher3/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -384,7 +384,7 @@ i\hbar\frac\partial{\partial t}\psi=-\frac{\hbar^2}{2m}\nabla^2\psi+V\psi
     </span>
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
-          <a href="/2021/08/17/thewitcher3/" class="post-title-link" itemprop="url">《巫师3：狂猎》——你在葬礼上打牌吗？</a>
+          <a href="/thewitcher3/" class="post-title-link" itemprop="url">《巫师3：狂猎》——你在葬礼上打牌吗？</a>
         </h2>
 
         <div class="post-meta-container">
@@ -406,7 +406,7 @@ i\hbar\frac\partial{\partial t}\psi=-\frac{\hbar^2}{2m}\nabla^2\psi+V\psi
       </span>
 
   
-    <span id="/2021/08/17/thewitcher3/" class="post-meta-item leancloud_visitors" data-flag-title="《巫师3：狂猎》——你在葬礼上打牌吗？" title="阅读次数">
+    <span id="/thewitcher3/" class="post-meta-item leancloud_visitors" data-flag-title="《巫师3：狂猎》——你在葬礼上打牌吗？" title="阅读次数">
       <span class="post-meta-item-icon">
         <i class="far fa-eye"></i>
       </span>
@@ -423,12 +423,12 @@ i\hbar\frac\partial{\partial t}\psi=-\frac{\hbar^2}{2m}\nabla^2\psi+V\psi
     
     <div class="post-body" itemprop="articleBody">
           <p>断断续续打了快两个月，我完成了巫师3的主线一周目，接下来就轮到两个DLC和大把支线了。这段时间确实有点太沉迷，几乎忘记了Minecraft。</p>
-<p><img src="https://blog.hidariya.space/2021/08/17/thewitcher3/image-20210817235112477.png"></p>
+<p><img src="https://blog.hidariya.space/thewitcher3/image-20210817235112477.png"></p>
 <p>这游戏确实称得上第九艺术，波兰蠢驴可以封神了。细节极端丰富的开放世界，鲜活立体的人物刻画，还有真实的代入感，名不虚传。</p>
-<p><img src="https://blog.hidariya.space/2021/08/17/thewitcher3/20210817171252_1.jpg"></p>
+<p><img src="https://blog.hidariya.space/thewitcher3/20210817171252_1.jpg"></p>
           <!--noindex-->
             <div class="post-button">
-              <a class="btn" href="/2021/08/17/thewitcher3/#more" rel="contents">
+              <a class="btn" href="/thewitcher3/#more" rel="contents">
                 阅读全文 &raquo;
               </a>
             </div>
@@ -459,7 +459,7 @@ i\hbar\frac\partial{\partial t}\psi=-\frac{\hbar^2}{2m}\nabla^2\psi+V\psi
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://blog.hidariya.space/2021/08/01/abort/">
+    <link itemprop="mainEntityOfPage" href="https://blog.hidariya.space/abort/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -472,7 +472,7 @@ i\hbar\frac\partial{\partial t}\psi=-\frac{\hbar^2}{2m}\nabla^2\psi+V\psi
     </span>
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
-          <a href="/2021/08/01/abort/" class="post-title-link" itemprop="url">华大学子逃离五道口实录</a>
+          <a href="/abort/" class="post-title-link" itemprop="url">华大学子逃离五道口实录</a>
         </h2>
 
         <div class="post-meta-container">
@@ -494,7 +494,7 @@ i\hbar\frac\partial{\partial t}\psi=-\frac{\hbar^2}{2m}\nabla^2\psi+V\psi
       </span>
 
   
-    <span id="/2021/08/01/abort/" class="post-meta-item leancloud_visitors" data-flag-title="华大学子逃离五道口实录" title="阅读次数">
+    <span id="/abort/" class="post-meta-item leancloud_visitors" data-flag-title="华大学子逃离五道口实录" title="阅读次数">
       <span class="post-meta-item-icon">
         <i class="far fa-eye"></i>
       </span>
@@ -511,10 +511,10 @@ i\hbar\frac\partial{\partial t}\psi=-\frac{\hbar^2}{2m}\nabla^2\psi+V\psi
     
     <div class="post-body" itemprop="articleBody">
           <p>2021年7月29日，北京市海淀区双清路出现一起新冠确诊病例，五道口职业技术学院的一名在校学生左矢（化名），没能见同学最后一面，便平静地离开了。</p>
-<p><img src="https://blog.hidariya.space/2021/08/01/abort/R-C.png"></p>
+<p><img src="https://blog.hidariya.space/abort/R-C.png"></p>
           <!--noindex-->
             <div class="post-button">
-              <a class="btn" href="/2021/08/01/abort/#more" rel="contents">
+              <a class="btn" href="/abort/#more" rel="contents">
                 阅读全文 &raquo;
               </a>
             </div>
@@ -545,7 +545,7 @@ i\hbar\frac\partial{\partial t}\psi=-\frac{\hbar^2}{2m}\nabla^2\psi+V\psi
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://blog.hidariya.space/2021/07/23/diary/metal/">
+    <link itemprop="mainEntityOfPage" href="https://blog.hidariya.space/diary/metal/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -558,7 +558,7 @@ i\hbar\frac\partial{\partial t}\psi=-\frac{\hbar^2}{2m}\nabla^2\psi+V\psi
     </span>
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
-          <a href="/2021/07/23/diary/metal/" class="post-title-link" itemprop="url">金工小学期：铁锤银剑</a>
+          <a href="/diary/metal/" class="post-title-link" itemprop="url">金工小学期：铁锤银剑</a>
         </h2>
 
         <div class="post-meta-container">
@@ -580,7 +580,7 @@ i\hbar\frac\partial{\partial t}\psi=-\frac{\hbar^2}{2m}\nabla^2\psi+V\psi
       </span>
 
   
-    <span id="/2021/07/23/diary/metal/" class="post-meta-item leancloud_visitors" data-flag-title="金工小学期：铁锤银剑" title="阅读次数">
+    <span id="/diary/metal/" class="post-meta-item leancloud_visitors" data-flag-title="金工小学期：铁锤银剑" title="阅读次数">
       <span class="post-meta-item-icon">
         <i class="far fa-eye"></i>
       </span>
@@ -601,7 +601,7 @@ i\hbar\frac\partial{\partial t}\psi=-\frac{\hbar^2}{2m}\nabla^2\psi+V\psi
 <p>金工实习确实有意思，实习结束，宿舍里便会多出一大堆奇形怪状的金属小玩意。这大概就是金工结课没有奖品的原因——奖品已经够多了。</p>
           <!--noindex-->
             <div class="post-button">
-              <a class="btn" href="/2021/07/23/diary/metal/#more" rel="contents">
+              <a class="btn" href="/diary/metal/#more" rel="contents">
                 阅读全文 &raquo;
               </a>
             </div>
@@ -632,7 +632,7 @@ i\hbar\frac\partial{\partial t}\psi=-\frac{\hbar^2}{2m}\nabla^2\psi+V\psi
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://blog.hidariya.space/2021/07/17/rmrf/">
+    <link itemprop="mainEntityOfPage" href="https://blog.hidariya.space/rmrf/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -645,7 +645,7 @@ i\hbar\frac\partial{\partial t}\psi=-\frac{\hbar^2}{2m}\nabla^2\psi+V\psi
     </span>
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
-          <a href="/2021/07/17/rmrf/" class="post-title-link" itemprop="url">rm -rf的恶魔</a>
+          <a href="/rmrf/" class="post-title-link" itemprop="url">rm -rf的恶魔</a>
         </h2>
 
         <div class="post-meta-container">
@@ -661,7 +661,7 @@ i\hbar\frac\partial{\partial t}\psi=-\frac{\hbar^2}{2m}\nabla^2\psi+V\psi
     </span>
 
   
-    <span id="/2021/07/17/rmrf/" class="post-meta-item leancloud_visitors" data-flag-title="rm -rf的恶魔" title="阅读次数">
+    <span id="/rmrf/" class="post-meta-item leancloud_visitors" data-flag-title="rm -rf的恶魔" title="阅读次数">
       <span class="post-meta-item-icon">
         <i class="far fa-eye"></i>
       </span>
@@ -680,7 +680,7 @@ i\hbar\frac\partial{\partial t}\psi=-\frac{\hbar^2}{2m}\nabla^2\psi+V\psi
           <p>身为服务器运维，总有一天要直面恶魔。</p>
           <!--noindex-->
             <div class="post-button">
-              <a class="btn" href="/2021/07/17/rmrf/#more" rel="contents">
+              <a class="btn" href="/rmrf/#more" rel="contents">
                 阅读全文 &raquo;
               </a>
             </div>
@@ -711,7 +711,7 @@ i\hbar\frac\partial{\partial t}\psi=-\frac{\hbar^2}{2m}\nabla^2\psi+V\psi
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://blog.hidariya.space/2021/07/12/diary/junxun/">
+    <link itemprop="mainEntityOfPage" href="https://blog.hidariya.space/diary/junxun/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -724,7 +724,7 @@ i\hbar\frac\partial{\partial t}\psi=-\frac{\hbar^2}{2m}\nabla^2\psi+V\psi
     </span>
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
-          <a href="/2021/07/12/diary/junxun/" class="post-title-link" itemprop="url">躺平人的形式化军训</a>
+          <a href="/diary/junxun/" class="post-title-link" itemprop="url">躺平人的形式化军训</a>
         </h2>
 
         <div class="post-meta-container">
@@ -746,7 +746,7 @@ i\hbar\frac\partial{\partial t}\psi=-\frac{\hbar^2}{2m}\nabla^2\psi+V\psi
       </span>
 
   
-    <span id="/2021/07/12/diary/junxun/" class="post-meta-item leancloud_visitors" data-flag-title="躺平人的形式化军训" title="阅读次数">
+    <span id="/diary/junxun/" class="post-meta-item leancloud_visitors" data-flag-title="躺平人的形式化军训" title="阅读次数">
       <span class="post-meta-item-icon">
         <i class="far fa-eye"></i>
       </span>
@@ -764,11 +764,11 @@ i\hbar\frac\partial{\partial t}\psi=-\frac{\hbar^2}{2m}\nabla^2\psi+V\psi
     <div class="post-body" itemprop="articleBody">
           <p>上篇帖子说到了告别过去，开启新生活。新生活的第一步，当然是新的发型了。</p>
 <p>（这里不放照片，打死也不放）</p>
-<p><img src="https://blog.hidariya.space/2021/07/12/diary/junxun/image-20210712211622766.png"></p>
-<p><img src="https://blog.hidariya.space/2021/07/12/diary/junxun/image-20210712211654891.png"></p>
+<p><img src="https://blog.hidariya.space/diary/junxun/image-20210712211622766.png"></p>
+<p><img src="https://blog.hidariya.space/diary/junxun/image-20210712211654891.png"></p>
           <!--noindex-->
             <div class="post-button">
-              <a class="btn" href="/2021/07/12/diary/junxun/#more" rel="contents">
+              <a class="btn" href="/diary/junxun/#more" rel="contents">
                 阅读全文 &raquo;
               </a>
             </div>
@@ -799,7 +799,7 @@ i\hbar\frac\partial{\partial t}\psi=-\frac{\hbar^2}{2m}\nabla^2\psi+V\psi
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://blog.hidariya.space/2021/06/18/diary/week16/">
+    <link itemprop="mainEntityOfPage" href="https://blog.hidariya.space/diary/week16/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -812,7 +812,7 @@ i\hbar\frac\partial{\partial t}\psi=-\frac{\hbar^2}{2m}\nabla^2\psi+V\psi
     </span>
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
-          <a href="/2021/06/18/diary/week16/" class="post-title-link" itemprop="url">Week16&17—最後の悲しみ</a>
+          <a href="/diary/week16/" class="post-title-link" itemprop="url">Week16&17—最後の悲しみ</a>
         </h2>
 
         <div class="post-meta-container">
@@ -834,7 +834,7 @@ i\hbar\frac\partial{\partial t}\psi=-\frac{\hbar^2}{2m}\nabla^2\psi+V\psi
       </span>
 
   
-    <span id="/2021/06/18/diary/week16/" class="post-meta-item leancloud_visitors" data-flag-title="Week16&17—最後の悲しみ" title="阅读次数">
+    <span id="/diary/week16/" class="post-meta-item leancloud_visitors" data-flag-title="Week16&17—最後の悲しみ" title="阅读次数">
       <span class="post-meta-item-icon">
         <i class="far fa-eye"></i>
       </span>
@@ -853,7 +853,7 @@ i\hbar\frac\partial{\partial t}\psi=-\frac{\hbar^2}{2m}\nabla^2\psi+V\psi
           <p>期末周总算是告一段落，阴间的日子到头了，接下来就是更阴间的日子。</p>
           <!--noindex-->
             <div class="post-button">
-              <a class="btn" href="/2021/06/18/diary/week16/#more" rel="contents">
+              <a class="btn" href="/diary/week16/#more" rel="contents">
                 阅读全文 &raquo;
               </a>
             </div>
@@ -884,7 +884,7 @@ i\hbar\frac\partial{\partial t}\psi=-\frac{\hbar^2}{2m}\nabla^2\psi+V\psi
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://blog.hidariya.space/2021/06/12/diary/week15/">
+    <link itemprop="mainEntityOfPage" href="https://blog.hidariya.space/diary/week15/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -897,7 +897,7 @@ i\hbar\frac\partial{\partial t}\psi=-\frac{\hbar^2}{2m}\nabla^2\psi+V\psi
     </span>
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
-          <a href="/2021/06/12/diary/week15/" class="post-title-link" itemprop="url">Week15—Before Armageddon</a>
+          <a href="/diary/week15/" class="post-title-link" itemprop="url">Week15—Before Armageddon</a>
         </h2>
 
         <div class="post-meta-container">
@@ -913,7 +913,7 @@ i\hbar\frac\partial{\partial t}\psi=-\frac{\hbar^2}{2m}\nabla^2\psi+V\psi
     </span>
 
   
-    <span id="/2021/06/12/diary/week15/" class="post-meta-item leancloud_visitors" data-flag-title="Week15—Before Armageddon" title="阅读次数">
+    <span id="/diary/week15/" class="post-meta-item leancloud_visitors" data-flag-title="Week15—Before Armageddon" title="阅读次数">
       <span class="post-meta-item-icon">
         <i class="far fa-eye"></i>
       </span>
@@ -930,10 +930,10 @@ i\hbar\frac\partial{\partial t}\psi=-\frac{\hbar^2}{2m}\nabla^2\psi+V\psi
     
     <div class="post-body" itemprop="articleBody">
           <p>Since I'm going to take my CET-6 exam, this post will be written in English. My English is very poor, and this post may be the only review before the exam.</p>
-<p><img src="https://blog.hidariya.space/2021/06/12/diary/week15/2b945b99dbf44467.jpg"></p>
+<p><img src="https://blog.hidariya.space/diary/week15/2b945b99dbf44467.jpg"></p>
           <!--noindex-->
             <div class="post-button">
-              <a class="btn" href="/2021/06/12/diary/week15/#more" rel="contents">
+              <a class="btn" href="/diary/week15/#more" rel="contents">
                 阅读全文 &raquo;
               </a>
             </div>
@@ -964,7 +964,7 @@ i\hbar\frac\partial{\partial t}\psi=-\frac{\hbar^2}{2m}\nabla^2\psi+V\psi
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://blog.hidariya.space/2021/05/31/diary/week14/">
+    <link itemprop="mainEntityOfPage" href="https://blog.hidariya.space/diary/week14/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -977,7 +977,7 @@ i\hbar\frac\partial{\partial t}\psi=-\frac{\hbar^2}{2m}\nabla^2\psi+V\psi
     </span>
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
-          <a href="/2021/05/31/diary/week14/" class="post-title-link" itemprop="url">Week14—把自己丢进历史的垃圾堆</a>
+          <a href="/diary/week14/" class="post-title-link" itemprop="url">Week14—把自己丢进历史的垃圾堆</a>
         </h2>
 
         <div class="post-meta-container">
@@ -999,7 +999,7 @@ i\hbar\frac\partial{\partial t}\psi=-\frac{\hbar^2}{2m}\nabla^2\psi+V\psi
       </span>
 
   
-    <span id="/2021/05/31/diary/week14/" class="post-meta-item leancloud_visitors" data-flag-title="Week14—把自己丢进历史的垃圾堆" title="阅读次数">
+    <span id="/diary/week14/" class="post-meta-item leancloud_visitors" data-flag-title="Week14—把自己丢进历史的垃圾堆" title="阅读次数">
       <span class="post-meta-item-icon">
         <i class="far fa-eye"></i>
       </span>
@@ -1018,11 +1018,11 @@ i\hbar\frac\partial{\partial t}\psi=-\frac{\hbar^2}{2m}\nabla^2\psi+V\psi
           <h4 id="北京海淀">北京海淀</h4>
 <p>这周是史纲支配的一周，从周一找队友开始，到周日最终缝合交稿，史纲论文的阴霾在我头上笼罩了一周。如果说写沟长文是生产学术垃圾，那史纲论文可以说是缝合怪在历史垃圾堆里面爬，边爬边把历史往自己的垃圾上缝。</p>
 <figure>
-<img src="https://blog.hidariya.space/2021/05/31/diary/week14/R51aa89cd6dffb00a44da2c736ce088f7.png" alt="梦魇缝合怪"><figcaption aria-hidden="true">梦魇缝合怪</figcaption>
+<img src="https://blog.hidariya.space/diary/week14/R51aa89cd6dffb00a44da2c736ce088f7.png" alt="梦魇缝合怪"><figcaption aria-hidden="true">梦魇缝合怪</figcaption>
 </figure>
           <!--noindex-->
             <div class="post-button">
-              <a class="btn" href="/2021/05/31/diary/week14/#more" rel="contents">
+              <a class="btn" href="/diary/week14/#more" rel="contents">
                 阅读全文 &raquo;
               </a>
             </div>
@@ -1053,7 +1053,7 @@ i\hbar\frac\partial{\partial t}\psi=-\frac{\hbar^2}{2m}\nabla^2\psi+V\psi
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://blog.hidariya.space/2021/05/23/diary/week13/">
+    <link itemprop="mainEntityOfPage" href="https://blog.hidariya.space/diary/week13/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -1066,7 +1066,7 @@ i\hbar\frac\partial{\partial t}\psi=-\frac{\hbar^2}{2m}\nabla^2\psi+V\psi
     </span>
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
-          <a href="/2021/05/23/diary/week13/" class="post-title-link" itemprop="url">Week13—被复变踩在脚下</a>
+          <a href="/diary/week13/" class="post-title-link" itemprop="url">Week13—被复变踩在脚下</a>
         </h2>
 
         <div class="post-meta-container">
@@ -1088,7 +1088,7 @@ i\hbar\frac\partial{\partial t}\psi=-\frac{\hbar^2}{2m}\nabla^2\psi+V\psi
       </span>
 
   
-    <span id="/2021/05/23/diary/week13/" class="post-meta-item leancloud_visitors" data-flag-title="Week13—被复变踩在脚下" title="阅读次数">
+    <span id="/diary/week13/" class="post-meta-item leancloud_visitors" data-flag-title="Week13—被复变踩在脚下" title="阅读次数">
       <span class="post-meta-item-icon">
         <i class="far fa-eye"></i>
       </span>
@@ -1105,10 +1105,10 @@ i\hbar\frac\partial{\partial t}\psi=-\frac{\hbar^2}{2m}\nabla^2\psi+V\psi
     
     <div class="post-body" itemprop="articleBody">
           <p>上周实在太摸，这周试图让自己忙起来。忙是忙了，感觉并没有实际作用，只是用忙碌的假象欺骗自己罢了。</p>
-<p><img src="https://blog.hidariya.space/2021/05/23/diary/week13/152891bdc807f8d6.jpg"></p>
+<p><img src="https://blog.hidariya.space/diary/week13/152891bdc807f8d6.jpg"></p>
           <!--noindex-->
             <div class="post-button">
-              <a class="btn" href="/2021/05/23/diary/week13/#more" rel="contents">
+              <a class="btn" href="/diary/week13/#more" rel="contents">
                 阅读全文 &raquo;
               </a>
             </div>
@@ -1306,7 +1306,7 @@ i\hbar\frac\partial{\partial t}\psi=-\frac{\hbar^2}{2m}\nabla^2\psi+V\psi
       }
     };
     const script = document.createElement('script');
-    script.src = 'https://cdn.jsdelivr.net/npm/mathjax@3.1.2/es5/tex-mml-chtml.js';
+    script.src = 'https://cdn.jsdelivr.net/npm/mathjax@2.7.8/unpacked/MathJax.js?config=TeX-MML-AM_CHTML';
     script.defer = true;
     document.head.appendChild(script);
   } else {

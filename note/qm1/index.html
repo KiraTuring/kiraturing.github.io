@@ -23,31 +23,33 @@
     var NexT = window.NexT || {};
     var CONFIG = {"hostname":"blog.hidariya.space","root":"/","images":"/images","scheme":"Pisces","version":"8.3.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":"disqus","storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}};
   </script>
-<meta name="description" content="这是左矢，他搭了个博客，记录他自己的日常">
-<meta property="og:type" content="website">
-<meta property="og:title" content="左矢的态矢空间">
-<meta property="og:url" content="https://blog.hidariya.space/page/3/index.html">
+<meta name="description" content="猛然发现这个博客一篇正经学习笔记都没有，这好吗，这不好。既然起了左矢这个名字，至少得写点跟左矢有关的东西。 这学期同时选了徐湛老师的费曼3和尤力老师的量力，相当于同时从两个角度学量子力学，进行了一个课程的简并。这博客也算是能帮我理清一下思路。 参考书目：格里菲斯，费曼第三卷，科恩 下面进入正题—— 波函数 概率幅与波函数 按照哥本哈根学派的解释，量子事件随机发生，每个事件对于一个复数\">
+<meta property="og:type" content="article">
+<meta property="og:title" content="量子力学量力学（1）">
+<meta property="og:url" content="https://blog.hidariya.space/note/qm1/index.html">
 <meta property="og:site_name" content="左矢的态矢空间">
-<meta property="og:description" content="这是左矢，他搭了个博客，记录他自己的日常">
+<meta property="og:description" content="猛然发现这个博客一篇正经学习笔记都没有，这好吗，这不好。既然起了左矢这个名字，至少得写点跟左矢有关的东西。 这学期同时选了徐湛老师的费曼3和尤力老师的量力，相当于同时从两个角度学量子力学，进行了一个课程的简并。这博客也算是能帮我理清一下思路。 参考书目：格里菲斯，费曼第三卷，科恩 下面进入正题—— 波函数 概率幅与波函数 按照哥本哈根学派的解释，量子事件随机发生，每个事件对于一个复数\">
 <meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2021-09-14T16:00:00.000Z">
+<meta property="article:modified_time" content="2021-09-18T04:27:33.419Z">
 <meta property="article:author" content="Dirac的左矢">
 <meta property="article:tag" content="博客 物理 清华大学">
 <meta name="twitter:card" content="summary">
 
 
-<link rel="canonical" href="https://blog.hidariya.space/page/3/">
+<link rel="canonical" href="https://blog.hidariya.space/note/qm1/">
 
 
 <script class="page-configurations">
   // https://hexo.io/docs/variables.html
   CONFIG.page = {
     sidebar: "",
-    isHome : true,
-    isPost : false,
+    isHome : false,
+    isPost : true,
     lang   : 'zh-CN'
   };
 </script>
-<title>左矢的态矢空间</title>
+<title>量子力学量力学（1） | 左矢的态矢空间</title>
   
 
 
@@ -147,7 +149,7 @@
 
   <aside class="sidebar">
 
-    <div class="sidebar-inner sidebar-overview-active">
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
       <ul class="sidebar-nav">
         <li class="sidebar-nav-toc">
           文章目录
@@ -160,6 +162,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%B3%A2%E5%87%BD%E6%95%B0"><span class="nav-number">1.</span> <span class="nav-text">波函数</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%A6%82%E7%8E%87%E5%B9%85%E4%B8%8E%E6%B3%A2%E5%87%BD%E6%95%B0"><span class="nav-number">1.1.</span> <span class="nav-text">概率幅与波函数</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%BE%B7%E5%B8%83%E7%BD%97%E6%84%8F%E5%85%B3%E7%B3%BB"><span class="nav-number">1.2.</span> <span class="nav-text">德布罗意关系</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%96%9B%E5%AE%9A%E8%B0%94%E6%96%B9%E7%A8%8B"><span class="nav-number">1.3.</span> <span class="nav-text">薛定谔方程</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%89%A9%E7%90%86%E9%87%8F%E7%9A%84%E6%9C%9F%E6%9C%9B%E5%80%BC"><span class="nav-number">1.4.</span> <span class="nav-text">物理量的期望值</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%8D%E7%A1%AE%E5%AE%9A%E5%8E%9F%E7%90%86"><span class="nav-number">1.5.</span> <span class="nav-text">不确定原理</span></a></li></ol></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -206,17 +209,18 @@
 </noscript>
 
 
-    <div class="main-inner index posts-expand">
+    <div class="main-inner post posts-expand">
 
-    
+
+  
 
 
 <div class="post-block">
   
   
 
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://blog.hidariya.space/%E4%B8%8A%E5%8D%8A%E5%AD%A6%E6%9C%9F%E6%80%BB%E7%BB%93/">
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://blog.hidariya.space/note/qm1/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -228,9 +232,9 @@
       <meta itemprop="name" content="左矢的态矢空间">
     </span>
       <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/%E4%B8%8A%E5%8D%8A%E5%AD%A6%E6%9C%9F%E6%80%BB%E7%BB%93/" class="post-title-link" itemprop="url">上半学期都干了啥?</a>
-        </h2>
+        <h1 class="post-title" itemprop="name headline">
+          量子力学量力学（1）
+        </h1>
 
         <div class="post-meta-container">
           <div class="post-meta">
@@ -240,18 +244,27 @@
       </span>
       <span class="post-meta-item-text">发表于</span>
 
-      <time title="创建时间：2021-04-20 19:55:07" itemprop="dateCreated datePublished" datetime="2021-04-20T19:55:07+08:00">2021-04-20</time>
+      <time title="创建时间：2021-09-15 00:00:00" itemprop="dateCreated datePublished" datetime="2021-09-15T00:00:00+08:00">2021-09-15</time>
     </span>
       <span class="post-meta-item">
         <span class="post-meta-item-icon">
           <i class="far fa-calendar-check"></i>
         </span>
         <span class="post-meta-item-text">更新于</span>
-        <time title="修改时间：2021-04-21 14:29:53" itemprop="dateModified" datetime="2021-04-21T14:29:53+08:00">2021-04-21</time>
+        <time title="修改时间：2021-09-18 12:27:33" itemprop="dateModified" datetime="2021-09-18T12:27:33+08:00">2021-09-18</time>
       </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/note/" itemprop="url" rel="index"><span itemprop="name">笔记</span></a>
+        </span>
+    </span>
 
   
-    <span id="/%E4%B8%8A%E5%8D%8A%E5%AD%A6%E6%9C%9F%E6%80%BB%E7%BB%93/" class="post-meta-item leancloud_visitors" data-flag-title="上半学期都干了啥?" title="阅读次数">
+    <span id="/note/qm1/" class="post-meta-item leancloud_visitors" data-flag-title="量子力学量力学（1）" title="阅读次数">
       <span class="post-meta-item-icon">
         <i class="far fa-eye"></i>
       </span>
@@ -267,239 +280,76 @@
     
     
     <div class="post-body" itemprop="articleBody">
-          <p>期中周结束了，总算是能放松一点了，不妨稍微总结一下上半学期都干了什么。</p>
-<h4 id="社团">社团</h4>
-<p>寒假的时候我大约的确就当上了THUnion的管理层，我都没反应过来，啪的一下就到了这个位置。虽说是管理，其实我并不是很擅长和人打交道，老社恐了，比起管理员，我还是更希望当个管服务器的运维工具人。</p>
-<p>刚开学没多久，就是春季的百团大战。都第二学期了，已经没有一腔热情的新生来给我们骗了。我还准备了本地的服务器存档给大家参观，结果，大家都是老社恐了，基本上没人想在众目睽睽之下打游戏。招新最后还是变成了部员的线下面基大会，唯一的收获，大概是部员的可爱女装照吧。</p>
-<p><img src="/images/nvzhuang.jpg"></p>
-<p>清明节假期，社团的服务器正式迁到了我的名下，域名将来也会过户到我名下。那两天我折腾了好长时间才搞定乱七八糟的各种问题。完事之后，我们还剥削了一下旧服务器的剩余价值，在旧服上激情uhc（激烈的烫头大战）</p>
-<p><img src="/images/ttdz.png"></p>
-<p>社团就是一群同好聚在一起，快乐整活的地方。能认识这些同好，还是挺不错的。</p>
-<h4 id="日语">日语</h4>
-<p>寒假的时候我一时兴起就自学了一点日语，就是图一乐。到寒假结束，大概是自学了小半本的标日初级上册，进度还是挺慢的。日本語は本当に難しい。</p>
-<p>我的高中同学fhf选修上了日语二外课，于是乎，在他的介绍下，我快乐蹭课的日子开始了。每周的两节日语课我只能上一节，根本跟不上进度。蹭课比起自学还是好的多，老师会教很多书上没有的表达，讲的很有意思，真的收获很大。我下学期也考虑冲一冲日语二外。</p>
-<p>说到蹭课，我直到这学期才意识到蹭课是多么的快乐——不写作业，不会被点，想听就听，不听就跑路——除了没有学分，简直太完美了。树洞上有这学期的上课地点清单，等学会上传文件了就把文件放上来。</p>
-<h4 id="班委">班委</h4>
-<p>虽然说我还是学委来着，但是这学期的学委工作几乎都被nxy大爷接手了，我已经被架空。被架空还是挺开心的。</p>
-<p>物02的研讨班搞了几次，效果感觉还行，dm那是真的强，微分几何不比高微有意思多了。</p>
-<p><img src="/images/dm.jpg"></p>
-<h4 id="课业">课业</h4>
-<p>之前选的课掉了挺多，补退选的时候我脑子一抽，选了个《恒星与行星》。当时想的是用全英文课顶英语学分，现在看来还是草率了。这课是相当硬的，和天导非常不一样，这个课更偏物理，作业动不动就让你用MATLAB数值求解。希望能撑过后半学期吧。</p>
-<p>基物实验和写沟可以并列这学期最痛苦的课了。简直了，我就不细说了，去写实验报告了。</p>
-<h4 id="吉他">吉他</h4>
-<p>《Sunflower》完全没什么进步，离谱，“勉强能弹”和“会弹”之间有极其巨大的鸿沟，搞得我都不想练了。最近在练郑成河的《いつも何度でも》前面一段，就是全曲唯一阳间的一段，感觉还行。</p>
-<h4 id="摸鱼">摸鱼</h4>
-<p>这学期没怎么出去玩过，就一个人出去看了三次电影。在校内偶尔去和THUnion的打桌游（桌游部石锤了）。在舍友的指导下，学会了打雀魂，根本停不下来，这不比群星有意思？</p>
-<p>最近两周又有了很多有意思的事，下次再更吧。</p>
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://blog.hidariya.space/hello_world/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Dirac的左矢">
-      <meta itemprop="description" content="这是左矢，他搭了个博客，记录他自己的日常">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="左矢的态矢空间">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/hello_world/" class="post-title-link" itemprop="url">Hello, World</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">发表于</span>
-
-      <time title="创建时间：2021-04-16 19:25:25" itemprop="dateCreated datePublished" datetime="2021-04-16T19:25:25+08:00">2021-04-16</time>
-    </span>
-      <span class="post-meta-item">
-        <span class="post-meta-item-icon">
-          <i class="far fa-calendar-check"></i>
-        </span>
-        <span class="post-meta-item-text">更新于</span>
-        <time title="修改时间：2021-04-20 19:55:52" itemprop="dateModified" datetime="2021-04-20T19:55:52+08:00">2021-04-20</time>
-      </span>
-
-  
-    <span id="/hello_world/" class="post-meta-item leancloud_visitors" data-flag-title="Hello, World" title="阅读次数">
-      <span class="post-meta-item-icon">
-        <i class="far fa-eye"></i>
-      </span>
-      <span class="post-meta-item-text">阅读次数：</span>
-      <span class="leancloud-visitors-count"></span>
-    </span>
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <p>期中周的某一天，我像往常一样高强度摸鱼。刷着知乎的时候，突发奇想：</p>
-<p><strong>我何不搭个自己的博客呢</strong>？</p>
-<p>听起来很突兀啊，但是这个时候正好有两个契机，造就了我这个想法。</p>
-<h5 id="契机一">契机一</h5>
-<p>作为THUnion（次世代的MC分部）的服务器运维，我现在掌控着部门的MC服务端，有了一点和服务器打交道的基础。前段时间旧服务器到期了，我租新服务器，买域名，备案，配置环境，迁存档，折腾了半天，玩服务端MC的时间可以说比玩客户端还长。</p>
-<p>在阿里云租服务器的时候，有个学生优惠活动让我心动了。学生认证之后，只要答几道题，就可以白嫖一个小服务器半年，配置还算过得去。我一看，白嫖嘛，谁能拒绝呢？当场就领取了。</p>
-<p>就这样，我有了小服务器。虽然不知道自己拿这么一个小服务器有什么用，但是我白嫖至少不会亏。</p>
-<h5 id="契机二">契机二</h5>
-<p>我有个同学他开了一个公众号叫DP鱼塘，就是记录自己的日常，督促自己学习什么的，还发一些人生感悟之类的，整的挺好，链接放在这里https://mp.weixin.qq.com/s/akVjzpaC7ObASoOVvqocdg</p>
-<p>好家伙，我也有点心动了。而且这段时间我自己确实是太摸了，不如自己也搞一个。但是呢，我一直以来都挺讨厌微信的，不太想去做公众号。而且要是我再去做一个公众号，和DP他就有点重复了，没什么新意，公众号没必要卷。</p>
-<p>在这个时候，我灵光乍现：我何不把我的小服务器用起来，搭个自己的网站呢？于是，搭建个人博客的想法产生了。</p>
-<h5 id="说干就干">说干就干</h5>
-<p>说干就干，虽然说期中周搞这些乱七八糟的不太好，但是搭个博客至少比打游戏看番睡大觉要有意义多了。折腾了差不多一个下午加一个晚上，博客的雏形已经有了。虽然域名暂时还没有，但是已经可以用公网ip访问了。就这样，我构造了一个属于自己的希尔伯特空间（这话好中二）</p>
-<p>为什么叫左矢的态矢空间呢？Dirac的左矢是我的id，我生活的地方自然就是态矢空间了。态矢空间是一个无穷维的希尔伯特空间，我希望我的生活也可以有无穷维的自由度。</p>
-<p>这个博客，我以后可能会偶尔更新一下生活日常，或者学习进度之类，无聊的时候码码字，说不定还能分享一点有用的经验什么的。我也不知道能不能坚持下去，以后的事以后再说，现在博客能开起来就是胜利。</p>
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://blog.hidariya.space/test/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Dirac的左矢">
-      <meta itemprop="description" content="这是左矢，他搭了个博客，记录他自己的日常">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="左矢的态矢空间">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/test/" class="post-title-link" itemprop="url">Test</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">发表于</span>
-
-      <time title="创建时间：2021-04-16 00:00:00" itemprop="dateCreated datePublished" datetime="2021-04-16T00:00:00+08:00">2021-04-16</time>
-    </span>
-      <span class="post-meta-item">
-        <span class="post-meta-item-icon">
-          <i class="far fa-calendar-check"></i>
-        </span>
-        <span class="post-meta-item-text">更新于</span>
-        <time title="修改时间：2021-04-21 14:27:26" itemprop="dateModified" datetime="2021-04-21T14:27:26+08:00">2021-04-21</time>
-      </span>
-
-  
-    <span id="/test/" class="post-meta-item leancloud_visitors" data-flag-title="Test" title="阅读次数">
-      <span class="post-meta-item-icon">
-        <i class="far fa-eye"></i>
-      </span>
-      <span class="post-meta-item-text">阅读次数：</span>
-      <span class="leancloud-visitors-count"></span>
-    </span>
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <p>Test</p>
-<table>
-<thead>
-<tr class="header">
-<th>1</th>
-<th>234</th>
-<th></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td></td>
-<td>44</td>
-<td></td>
-</tr>
-<tr class="even">
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td></td>
-<td></td>
-<td>好家伙</td>
-</tr>
-</tbody>
-</table>
-<p>测试</p>
-<h1 id="标题">标题</h1>
-<h3 id="小标题">小标题</h3>
-<p><span class="math display">\[
-公式\\
-f(x)=\sum_i\frac {f^{(n)}(0)}{n!}x^n
+        <p>猛然发现这个博客一篇正经学习笔记都没有，这好吗，这不好。既然起了左矢这个名字，至少得写点跟左矢有关的东西。</p>
+<p>这学期同时选了徐湛老师的费曼3和尤力老师的量力，相当于同时从两个角度学量子力学，进行了一个课程的简并。这博客也算是能帮我理清一下思路。</p>
+<p>参考书目：格里菲斯，费曼第三卷，科恩</p>
+<p>下面进入正题——</p>
+<h2 id="波函数">波函数</h2>
+<h3 id="概率幅与波函数">概率幅与波函数</h3>
+<p>按照哥本哈根学派的解释，量子事件随机发生，每个事件对于一个<strong>复数</strong><span class="math inline">\(\psi\)</span> ，称为<strong>概率幅</strong>。事件的发生概率即对应概率幅的模方<span class="math inline">\(P=|\psi|^2\)</span>。</p>
+<p>所谓“事件”，可以是离散的（如能级、双缝通道），也可以是连续的（如位置、动量），就是概率和概率密度的区别。</p>
+<p>不观测时，不同状态的<span class="math inline">\(\psi\)</span>可以叠加，<span class="math inline">\(P=|\psi_1+\psi_2|^2\)</span> 。</p>
+<p>观测时，则变成经典概率叠加，<span class="math inline">\(P=|\psi_1|^2+|\psi_2|^2\)</span> 。</p>
+<p>特别地，事件“粒子在某位置被观测”对应的概率幅<span class="math inline">\(\psi(\vec r,t)\)</span>​ ，称为<strong>波函数</strong>。<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></p>
+<p>波函数必须满足归一化条件 <span class="math display">\[
+\int_\Omega|\psi|^2d^3r=1
 \]</span></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">代码: printf(hello_world)</span><br></pre></td></tr></table></figure>
-<blockquote>
-<p>这是引用</p>
-</blockquote>
+<h3 id="德布罗意关系">德布罗意关系</h3>
+<p>最简单的单色平面波方程： <span class="math display">\[
+\psi(\vec r,t)\propto e^{i(\vec k\cdot\vec r-\omega t)}
+\]</span> 有德布罗意关系 <span class="math display">\[
+\vec p=\hbar \vec k\\\\
+E=\hbar\omega
+\]</span> 对应一个有着确定能量和动量的自由粒子。</p>
+<p>这种情况实际上并不存在，因为：</p>
+<ol type="1">
+<li>单色平面波需要无限的空间和时间，在物理上无法完美实现</li>
+<li>这个函数的模方不可积，在数学上无法归一化，不能表示概率</li>
+</ol>
+<p>当然，不存在并不妨碍我们的使用。</p>
+<h3 id="薛定谔方程">薛定谔方程</h3>
+<p>从单色平面波 <span class="math inline">\(\vec p=\hbar \vec k\)</span> 可以推出 <span class="math display">\[
+\vec p\psi=-i\hbar\nabla\psi
+\]</span> 我们强行把<span class="math inline">\(\psi\)</span>约掉，把动量变成了<strong>动量算符</strong> <span class="math display">\[
+\hat p\equiv-i\hbar\nabla
+\]</span> 代入哈密顿量可以得到哈密顿算符。把经典动量替换为动量算符的操作，称为<strong>正则量子化</strong>。 <span class="math display">\[
+H=\frac{p^2}{2m}+V\\\\
+\Rightarrow\hat H\equiv-\frac{\hbar^2}{2m}\nabla^2+V
+\]</span> 对能量同样处理，则得到 <span class="math display">\[
+E\psi=i\hbar\frac\partial{\partial t}\psi
+\]</span> 能量的算符正是哈密顿算符，我们不可能再定义一个能量算符，所以这条不再是定义，而是一条定律。波函数的牛二定律——<strong>薛定谔方程</strong> <span class="math display">\[
+i\hbar\frac\partial{\partial t}\psi=\hat H\psi
+\]</span> 代入哈密顿算符得到薛定谔方程的完全体： <span class="math display">\[
+i\hbar\frac\partial{\partial t}\psi=-\frac{\hbar^2}{2m}\nabla^2\psi+V\psi
+\]</span></p>
+<h3 id="物理量的期望值">物理量的期望值</h3>
+<p>一坨波函数没有一个确定的位置，只能有位置的<strong>期望</strong> <span class="math display">\[
+&lt;x&gt;=\int_\Omega\psi^* x\psi d^3r
+\]</span> 位置还可以有交换律，动量算符就没法交换了<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a></p>
+<p><span class="math display">\[
+&lt;p_x&gt;=\int_\Omega\psi^*(-i\hbar\frac{\partial}{\partial x})\psi d^3r
+\]</span> 代入薛定谔方程，一波操作，有 <span class="math display">\[
+&lt;p_x&gt;=m\frac d{dt}&lt;x&gt;\\\\
+\frac d{dt}&lt;p_x&gt;=&lt;-\frac{\partial V}{\partial x}&gt;
+\]</span> 和经典公式完全一致。</p>
+<p><strong>方差</strong>同理 <span class="math display">\[
+\sigma^2_x=&lt;x^2&gt;-&lt;x&gt;^2
+\]</span></p>
+<h3 id="不确定原理">不确定原理</h3>
+<p>取一个高斯分布的波函数<span class="math inline">\(\psi\propto e^{-\lambda x^2}\)</span>，可以得到 <span class="math display">\[
+\sigma_x\sigma_{p_x}\ge\frac{\hbar}2
+\]</span> 一般取大于，只有高斯分布才取等。</p>
+<p>这种不确定来自于位置和动量的非对易性 <span class="math display">\[
+[x,p_x]=x\hat p_x-\hat p_xx=i\hbar
+\]</span></p>
+<section class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn1" role="doc-endnote"><p>在经典量子力学中，时间<span class="math inline">\(t\)</span>​不是一个物理量，可以理解为一个独立于所有物理量的参数<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2" role="doc-endnote"><p>这里都是位置表象下的波函数，动量表象先不提。<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section>
 
-      
     </div>
 
     
@@ -507,8 +357,18 @@ f(x)=\sum_i\frac {f^{(n)}(0)}{n!}x^n
     
 
     <footer class="post-footer">
-        <div class="post-eof"></div>
-      
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/thewitcher3/" rel="prev" title="《巫师3：狂猎》——你在葬礼上打牌吗？">
+                  <i class="fa fa-chevron-left"></i> 《巫师3：狂猎》——你在葬礼上打牌吗？
+                </a>
+            </div>
+            <div class="post-nav-item">
+            </div>
+          </div>
     </footer>
   </article>
 </div>
@@ -516,9 +376,7 @@ f(x)=\sum_i\frac {f^{(n)}(0)}{n!}x^n
 
 
 
-  <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/page/2/"><i class="fa fa-angle-left" aria-label="上一页"></i></a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/">2</a><span class="page-number current">3</span>
-  </nav>
+
 
 
 <script>
