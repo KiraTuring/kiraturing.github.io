@@ -246,7 +246,7 @@
           <i class="far fa-calendar-check"></i>
         </span>
         <span class="post-meta-item-text">更新于</span>
-        <time title="修改时间：2021-09-18 11:45:13" itemprop="dateModified" datetime="2021-09-18T11:45:13+08:00">2021-09-18</time>
+        <time title="修改时间：2021-09-18 11:57:08" itemprop="dateModified" datetime="2021-09-18T11:57:08+08:00">2021-09-18</time>
       </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -292,10 +292,8 @@
 <h4 id="德布罗意关系">1.2 德布罗意关系</h4>
 <p>最简单的单色平面波方程： <span class="math display">\[
 \psi(\vec r,t)\propto e^{i(\vec k\cdot\vec r-\omega t)}
-\]</span> 有德布罗意关系 <span class="math display">\[
-\vec p=\hbar \vec k\\
-E=\hbar\omega
-\]</span> 对应一个有着确定能量和动量的自由粒子。</p>
+\]</span> 有德布罗意关系 $$ p=k\</p>
+<p>E= $$ 对应一个有着确定能量和动量的自由粒子。</p>
 <p>这种情况实际上并不存在，因为：</p>
 <ol type="1">
 <li>单色平面波需要无限的空间和时间，在物理上无法完美实现</li>
@@ -307,26 +305,22 @@ E=\hbar\omega
 \vec p\psi=-i\hbar\nabla\psi
 \]</span> 我们强行把<span class="math inline">\(\psi\)</span>约掉，把动量变成了<strong>动量算符</strong> <span class="math display">\[
 \hat p\equiv-i\hbar\nabla
-\]</span> 代入哈密顿量可以得到哈密顿算符。把经典动量替换为动量算符的操作，称为<strong>正则量子化</strong>。 <span class="math display">\[
-H=\frac{p^2}{2m}+V\\
-\Rightarrow\hat H\equiv-\frac{\hbar^2}{2m}\nabla^2+V
-\]</span> 对能量同样处理，则得到 <span class="math display">\[
-E\psi=i\hbar\frac\partial{\partial t}\psi
-\]</span> 能量的算符正是哈密顿算符，我们不可能再定义一个能量算符，所以这条不再是定义，而是一条定律。波函数的牛二定律——<strong>薛定谔方程</strong> <span class="math display">\[
-i\hbar\frac\partial{\part t}\psi=\hat H\psi
-\]</span> 代入哈密顿算符得到薛定谔方程的完全体： <span class="math display">\[
-i\hbar\frac\part{\part t}\psi=-\frac{\hbar^2}{2m}\nabla^2\psi+V\psi
-\]</span></p>
+\]</span> 代入哈密顿量可以得到哈密顿算符。把经典动量替换为动量算符的操作，称为<strong>正则量子化</strong>。 $$ H=+V\</p>
+<p>H-^2+V <span class="math display">\[
+对能量同样处理，则得到
+\]</span> E=i <span class="math display">\[
+能量的算符正是哈密顿算符，我们不可能再定义一个能量算符，所以这条不再是定义，而是一条定律。波函数的牛二定律——**薛定谔方程**
+\]</span> i=H <span class="math display">\[
+代入哈密顿算符得到薛定谔方程的完全体：
+\]</span> i=-^2+V $$</p>
 <h4 id="物理量的期望值">1.4 物理量的期望值</h4>
 <p>一坨波函数没有一个确定的位置，只能有位置的<strong>期望</strong> <span class="math display">\[
 &lt;x&gt;=\int_\Omega\psi^* x\psi d^3r
-\]</span> 位置只是个数，还可以有交换律。动量算符就没法交换了 <span class="math display">\[
-&lt;p_x&gt;=\int_\Omega\psi^*(-i\hbar\frac{\part}{\part x})\psi d^3r
-\]</span> 代入薛定谔方程，一波操作，有 <span class="math display">\[
-&lt;p_x&gt;=m\frac d{dt}&lt;x&gt;\\
-\frac d{dt}&lt;p_x&gt;=&lt;-\frac{\part V}{\part x}&gt;
-\]</span> 和经典公式完全一致。</p>
-<p>这里都是位置表象下的波函数，动量表象先不提。</p>
+\]</span> 位置还可以有交换律，动量算符就没法交换了<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a></p>
+<p><span class="math display">\[
+&lt;p_x&gt;=\int_\Omega\psi^*(-i\hbar\frac{\partial}{\partial x})\psi d^3r
+\]</span> 代入薛定谔方程，一波操作，有 $$ <p_x>=md{dt}<x>\</x></p_x></p>
+<p>d{dt}<p_x>=&lt;-&gt; $$ 和经典公式完全一致。</p_x></p>
 <p><strong>方差</strong>同理 <span class="math display">\[
 \sigma^2_x=&lt;x^2&gt;-&lt;x&gt;^2
 \]</span></p>
@@ -341,6 +335,7 @@ i\hbar\frac\part{\part t}\psi=-\frac{\hbar^2}{2m}\nabla^2\psi+V\psi
 <hr>
 <ol>
 <li id="fn1" role="doc-endnote"><p>在经典量子力学中，时间<span class="math inline">\(t\)</span>​不是一个物理量，可以理解为一个独立于所有物理量的参数<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2" role="doc-endnote"><p>这里都是位置表象下的波函数，动量表象先不提。<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 </ol>
 </section>
 
@@ -709,7 +704,7 @@ i\hbar\frac\part{\part t}\psi=-\frac{\hbar^2}{2m}\nabla^2\psi+V\psi
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://blog.hidariya.space/2021/07/12/junxun/">
+    <link itemprop="mainEntityOfPage" href="https://blog.hidariya.space/2021/07/12/diary/junxun/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -722,7 +717,7 @@ i\hbar\frac\part{\part t}\psi=-\frac{\hbar^2}{2m}\nabla^2\psi+V\psi
     </span>
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
-          <a href="/2021/07/12/junxun/" class="post-title-link" itemprop="url">躺平人的形式化军训</a>
+          <a href="/2021/07/12/diary/junxun/" class="post-title-link" itemprop="url">躺平人的形式化军训</a>
         </h2>
 
         <div class="post-meta-container">
@@ -744,7 +739,7 @@ i\hbar\frac\part{\part t}\psi=-\frac{\hbar^2}{2m}\nabla^2\psi+V\psi
       </span>
 
   
-    <span id="/2021/07/12/junxun/" class="post-meta-item leancloud_visitors" data-flag-title="躺平人的形式化军训" title="阅读次数">
+    <span id="/2021/07/12/diary/junxun/" class="post-meta-item leancloud_visitors" data-flag-title="躺平人的形式化军训" title="阅读次数">
       <span class="post-meta-item-icon">
         <i class="far fa-eye"></i>
       </span>
@@ -762,11 +757,11 @@ i\hbar\frac\part{\part t}\psi=-\frac{\hbar^2}{2m}\nabla^2\psi+V\psi
     <div class="post-body" itemprop="articleBody">
           <p>上篇帖子说到了告别过去，开启新生活。新生活的第一步，当然是新的发型了。</p>
 <p>（这里不放照片，打死也不放）</p>
-<p><img src="https://blog.hidariya.space/2021/07/12/junxun/image-20210712211622766.png"></p>
-<p><img src="https://blog.hidariya.space/2021/07/12/junxun/image-20210712211654891.png"></p>
+<p><img src="https://blog.hidariya.space/2021/07/12/diary/junxun/image-20210712211622766.png"></p>
+<p><img src="https://blog.hidariya.space/2021/07/12/diary/junxun/image-20210712211654891.png"></p>
           <!--noindex-->
             <div class="post-button">
-              <a class="btn" href="/2021/07/12/junxun/#more" rel="contents">
+              <a class="btn" href="/2021/07/12/diary/junxun/#more" rel="contents">
                 阅读全文 &raquo;
               </a>
             </div>
