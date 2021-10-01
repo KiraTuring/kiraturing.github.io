@@ -23,25 +23,21 @@
     var NexT = window.NexT || {};
     var CONFIG = {"hostname":"blog.hidariya.space","root":"/","images":"/images","scheme":"Pisces","version":"8.3.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":"disqus","storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}};
   </script>
-<meta name="description" content="期中周结束了，总算是能放松一点了，不妨稍微总结一下上半学期都干了什么。 社团 寒假的时候我大约的确就当上了THUnion的管理层，我都没反应过来，啪的一下就到了这个位置。虽说是管理，其实我并不是很擅长和人打交道，老社恐了，比起管理员，我还是更希望当个管服务器的运维工具人。 刚开学没多久，就是春季的百团大战。都第二学期了，已经没有一腔热情的新生来给我们骗了。我还准备了本地的服务器存档给大家参观">
+<meta name="description" content="定态 定态薛定谔方程 势函数不含时（能量守恒）条件下，概率分布不随时间变化。因此可以将空间因子和时间因子分离 \[ \Psi(x,t)&#x3D;\psi(x)\phi(t) \] 其中 \(\psi\) 和 \(\phi\) 各自归一化。 代入薛定谔方程，一通分离变量操作，得到两个方程 \[ \hat H\psi(x)&#x3D;E\psi(x)\\\\ i\hbar\frac\partial{\pa">
 <meta property="og:type" content="article">
-<meta property="og:title" content="上半学期都干了啥?">
-<meta property="og:url" content="https://blog.hidariya.space/2021/04/20/%E4%B8%8A%E5%8D%8A%E5%AD%A6%E6%9C%9F%E6%80%BB%E7%BB%93/index.html">
+<meta property="og:title" content="量子力学量力学（2）">
+<meta property="og:url" content="https://blog.hidariya.space/2021/09/22/qm2/index.html">
 <meta property="og:site_name" content="左矢的态矢空间">
-<meta property="og:description" content="期中周结束了，总算是能放松一点了，不妨稍微总结一下上半学期都干了什么。 社团 寒假的时候我大约的确就当上了THUnion的管理层，我都没反应过来，啪的一下就到了这个位置。虽说是管理，其实我并不是很擅长和人打交道，老社恐了，比起管理员，我还是更希望当个管服务器的运维工具人。 刚开学没多久，就是春季的百团大战。都第二学期了，已经没有一腔热情的新生来给我们骗了。我还准备了本地的服务器存档给大家参观">
+<meta property="og:description" content="定态 定态薛定谔方程 势函数不含时（能量守恒）条件下，概率分布不随时间变化。因此可以将空间因子和时间因子分离 \[ \Psi(x,t)&#x3D;\psi(x)\phi(t) \] 其中 \(\psi\) 和 \(\phi\) 各自归一化。 代入薛定谔方程，一通分离变量操作，得到两个方程 \[ \hat H\psi(x)&#x3D;E\psi(x)\\\\ i\hbar\frac\partial{\pa">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://blog.hidariya.space/images/nvzhuang.jpg">
-<meta property="og:image" content="https://blog.hidariya.space/images/ttdz.png">
-<meta property="og:image" content="https://blog.hidariya.space/images/dm.jpg">
-<meta property="article:published_time" content="2021-04-20T11:55:07.462Z">
-<meta property="article:modified_time" content="2021-04-21T06:29:53.276Z">
+<meta property="article:published_time" content="2021-09-21T16:00:00.000Z">
+<meta property="article:modified_time" content="2021-09-26T13:03:37.606Z">
 <meta property="article:author" content="Dirac的左矢">
 <meta property="article:tag" content="博客 物理 清华大学">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://blog.hidariya.space/images/nvzhuang.jpg">
 
 
-<link rel="canonical" href="https://blog.hidariya.space/2021/04/20/%E4%B8%8A%E5%8D%8A%E5%AD%A6%E6%9C%9F%E6%80%BB%E7%BB%93/">
+<link rel="canonical" href="https://blog.hidariya.space/2021/09/22/qm2/">
 
 
 <script class="page-configurations">
@@ -53,7 +49,7 @@
     lang   : 'zh-CN'
   };
 </script>
-<title>上半学期都干了啥? | 左矢的态矢空间</title>
+<title>量子力学量力学（2） | 左矢的态矢空间</title>
   
 
 
@@ -166,7 +162,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E7%A4%BE%E5%9B%A2"><span class="nav-number">1.</span> <span class="nav-text">社团</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%97%A5%E8%AF%AD"><span class="nav-number">2.</span> <span class="nav-text">日语</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E7%8F%AD%E5%A7%94"><span class="nav-number">3.</span> <span class="nav-text">班委</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E8%AF%BE%E4%B8%9A"><span class="nav-number">4.</span> <span class="nav-text">课业</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%90%89%E4%BB%96"><span class="nav-number">5.</span> <span class="nav-text">吉他</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%91%B8%E9%B1%BC"><span class="nav-number">6.</span> <span class="nav-text">摸鱼</span></a></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AE%9A%E6%80%81"><span class="nav-number">1.</span> <span class="nav-text">定态</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AE%9A%E6%80%81%E8%96%9B%E5%AE%9A%E8%B0%94%E6%96%B9%E7%A8%8B"><span class="nav-number">1.1.</span> <span class="nav-text">定态薛定谔方程</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AE%9A%E6%80%81%E6%B3%A2%E5%87%BD%E6%95%B0%E7%9A%84%E7%89%B9%E6%80%A7"><span class="nav-number">1.2.</span> <span class="nav-text">定态波函数的特性</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%80%E7%BB%B4%E5%AE%9A%E6%80%81%E6%B3%A2%E5%87%BD%E6%95%B0%E7%9A%84%E5%AE%9A%E6%80%A7%E5%88%86%E6%9E%90"><span class="nav-number">1.3.</span> <span class="nav-text">一维定态波函数的定性分析</span></a></li></ol></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -226,7 +222,7 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://blog.hidariya.space/2021/04/20/%E4%B8%8A%E5%8D%8A%E5%AD%A6%E6%9C%9F%E6%80%BB%E7%BB%93/">
+    <link itemprop="mainEntityOfPage" href="https://blog.hidariya.space/2021/09/22/qm2/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -239,7 +235,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          上半学期都干了啥?
+          量子力学量力学（2）
         </h1>
 
         <div class="post-meta-container">
@@ -250,18 +246,27 @@
       </span>
       <span class="post-meta-item-text">发表于</span>
 
-      <time title="创建时间：2021-04-20 19:55:07" itemprop="dateCreated datePublished" datetime="2021-04-20T19:55:07+08:00">2021-04-20</time>
+      <time title="创建时间：2021-09-22 00:00:00" itemprop="dateCreated datePublished" datetime="2021-09-22T00:00:00+08:00">2021-09-22</time>
     </span>
       <span class="post-meta-item">
         <span class="post-meta-item-icon">
           <i class="far fa-calendar-check"></i>
         </span>
         <span class="post-meta-item-text">更新于</span>
-        <time title="修改时间：2021-04-21 14:29:53" itemprop="dateModified" datetime="2021-04-21T14:29:53+08:00">2021-04-21</time>
+        <time title="修改时间：2021-09-26 21:03:37" itemprop="dateModified" datetime="2021-09-26T21:03:37+08:00">2021-09-26</time>
       </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/note/" itemprop="url" rel="index"><span itemprop="name">笔记</span></a>
+        </span>
+    </span>
 
   
-    <span id="/2021/04/20/%E4%B8%8A%E5%8D%8A%E5%AD%A6%E6%9C%9F%E6%80%BB%E7%BB%93/" class="post-meta-item leancloud_visitors" data-flag-title="上半学期都干了啥?" title="阅读次数">
+    <span id="/2021/09/22/qm2/" class="post-meta-item leancloud_visitors" data-flag-title="量子力学量力学（2）" title="阅读次数">
       <span class="post-meta-item-icon">
         <i class="far fa-eye"></i>
       </span>
@@ -277,30 +282,44 @@
     
     
     <div class="post-body" itemprop="articleBody">
-        <p>期中周结束了，总算是能放松一点了，不妨稍微总结一下上半学期都干了什么。</p>
-<h4 id="社团">社团</h4>
-<p>寒假的时候我大约的确就当上了THUnion的管理层，我都没反应过来，啪的一下就到了这个位置。虽说是管理，其实我并不是很擅长和人打交道，老社恐了，比起管理员，我还是更希望当个管服务器的运维工具人。</p>
-<p>刚开学没多久，就是春季的百团大战。都第二学期了，已经没有一腔热情的新生来给我们骗了。我还准备了本地的服务器存档给大家参观，结果，大家都是老社恐了，基本上没人想在众目睽睽之下打游戏。招新最后还是变成了部员的线下面基大会，唯一的收获，大概是部员的可爱女装照吧。</p>
-<p><img src="/images/nvzhuang.jpg"></p>
-<p>清明节假期，社团的服务器正式迁到了我的名下，域名将来也会过户到我名下。那两天我折腾了好长时间才搞定乱七八糟的各种问题。完事之后，我们还剥削了一下旧服务器的剩余价值，在旧服上激情uhc（激烈的烫头大战）</p>
-<p><img src="/images/ttdz.png"></p>
-<p>社团就是一群同好聚在一起，快乐整活的地方。能认识这些同好，还是挺不错的。</p>
-<h4 id="日语">日语</h4>
-<p>寒假的时候我一时兴起就自学了一点日语，就是图一乐。到寒假结束，大概是自学了小半本的标日初级上册，进度还是挺慢的。日本語は本当に難しい。</p>
-<p>我的高中同学fhf选修上了日语二外课，于是乎，在他的介绍下，我快乐蹭课的日子开始了。每周的两节日语课我只能上一节，根本跟不上进度。蹭课比起自学还是好的多，老师会教很多书上没有的表达，讲的很有意思，真的收获很大。我下学期也考虑冲一冲日语二外。</p>
-<p>说到蹭课，我直到这学期才意识到蹭课是多么的快乐——不写作业，不会被点，想听就听，不听就跑路——除了没有学分，简直太完美了。树洞上有这学期的上课地点清单，等学会上传文件了就把文件放上来。</p>
-<h4 id="班委">班委</h4>
-<p>虽然说我还是学委来着，但是这学期的学委工作几乎都被nxy大爷接手了，我已经被架空。被架空还是挺开心的。</p>
-<p>物02的研讨班搞了几次，效果感觉还行，dm那是真的强，微分几何不比高微有意思多了。</p>
-<p><img src="/images/dm.jpg"></p>
-<h4 id="课业">课业</h4>
-<p>之前选的课掉了挺多，补退选的时候我脑子一抽，选了个《恒星与行星》。当时想的是用全英文课顶英语学分，现在看来还是草率了。这课是相当硬的，和天导非常不一样，这个课更偏物理，作业动不动就让你用MATLAB数值求解。希望能撑过后半学期吧。</p>
-<p>基物实验和写沟可以并列这学期最痛苦的课了。简直了，我就不细说了，去写实验报告了。</p>
-<h4 id="吉他">吉他</h4>
-<p>《Sunflower》完全没什么进步，离谱，“勉强能弹”和“会弹”之间有极其巨大的鸿沟，搞得我都不想练了。最近在练郑成河的《いつも何度でも》前面一段，就是全曲唯一阳间的一段，感觉还行。</p>
-<h4 id="摸鱼">摸鱼</h4>
-<p>这学期没怎么出去玩过，就一个人出去看了三次电影。在校内偶尔去和THUnion的打桌游（桌游部石锤了）。在舍友的指导下，学会了打雀魂，根本停不下来，这不比群星有意思？</p>
-<p>最近两周又有了很多有意思的事，下次再更吧。</p>
+        <h2 id="定态">定态</h2>
+<h3 id="定态薛定谔方程">定态薛定谔方程</h3>
+<p><strong>势函数不含时（能量守恒）条件下</strong>，概率分布不随时间变化。因此可以将空间因子和时间因子分离 <span class="math display">\[
+\Psi(x,t)=\psi(x)\phi(t)
+\]</span> 其中 <span class="math inline">\(\psi\)</span> 和 <span class="math inline">\(\phi\)</span> 各自归一化。</p>
+<p>代入薛定谔方程，一通分离变量操作，得到两个方程 <span class="math display">\[
+\hat H\psi(x)=E\psi(x)\\\\
+i\hbar\frac\partial{\partial t}\phi(t)=E\phi(t)
+\]</span> 其中 <span class="math inline">\(E\)</span> 即为哈密顿算符的本征值。</p>
+<p>解得定态波函数 <span class="math display">\[
+\Psi(x,t)=\psi(x)e^{-iEt/\hbar}
+\]</span> <span class="math inline">\(\psi\)</span> 满足的方程代入一维哈密顿算符即得到<strong>一维定态薛定谔方程</strong> <span class="math display">\[
+[-\frac{\hbar^2}{2m}\frac {d^2}{dx^2}+V(x)]\psi(x)=E\psi(x)
+\]</span> 也就是唯一有可能被我解出来的方程</p>
+<h3 id="定态波函数的特性">定态波函数的特性</h3>
+<ol type="1">
+<li>定态波函数本身含时，但时间因子会在取共轭时约掉。因此波函数模方（即<strong>概率密度</strong>）以及所有<strong>物理量的期望</strong>都<strong>不含时</strong>。</li>
+<li>本征值 <span class="math inline">\(E\)</span> 即为定态所对应的能量，能量<strong>守恒</strong>且<strong>确定</strong>（方差为0）<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></li>
+<li>本征值不同的定态叠加不是定态，模方含时</li>
+</ol>
+<p>所有的定态构成了薛定谔方程通解的一组基，任意解都可如此分解： <span class="math display">\[
+\Psi(x,t)=\sum_{n=1}^\infty c_n\psi_n(x)e^{-iE_nt/\hbar}
+\]</span></p>
+<h3 id="一维定态波函数的定性分析">一维定态波函数的定性分析</h3>
+<p>整理一下方程 <span class="math display">\[
+\frac{d^2\psi}{dx^2}+\frac{2m}{\hbar^2}[E-V(x)]\psi=0
+\]</span></p>
+<ol type="1">
+<li><span class="math inline">\(E&lt;V\)</span> 时， <span class="math inline">\(\frac{d^2\psi}{dx^2}\)</span> 与 <span class="math inline">\(\psi\)</span> 符号相同，向远离x轴的方向弯曲，类似指数增长和指数衰减，对应<strong>经典禁区</strong>。</li>
+<li><span class="math inline">\(E&gt;V\)</span> 时， <span class="math inline">\(\frac{d^2\psi}{dx^2}\)</span> 与 <span class="math inline">\(\psi\)</span> 符号相反，向靠近x轴的方向弯曲，类似正弦函数，对应<strong>经典允许区</strong>。</li>
+</ol>
+<p><em>つづく</em></p>
+<section class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn1" role="doc-endnote"><p>前提是观测时间无限长。既然体系不随时间演化，这个条件自然满足。<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section>
 
     </div>
 
@@ -314,13 +333,13 @@
 
           <div class="post-nav">
             <div class="post-nav-item">
-                <a href="/2021/04/16/hello_world/" rel="prev" title="Hello, World">
-                  <i class="fa fa-chevron-left"></i> Hello, World
+                <a href="/2021/09/18/t3w1/" rel="prev" title="Week 1：回到现实">
+                  <i class="fa fa-chevron-left"></i> Week 1：回到现实
                 </a>
             </div>
             <div class="post-nav-item">
-                <a href="/2021/04/30/week8_10/" rel="next" title="Week8-10总结">
-                  Week8-10总结 <i class="fa fa-chevron-right"></i>
+                <a href="/2021/09/26/t3w2/" rel="next" title="Week2：乐不出来">
+                  Week2：乐不出来 <i class="fa fa-chevron-right"></i>
                 </a>
             </div>
           </div>
@@ -483,7 +502,38 @@
 </script>
 
 
-  
+  <script>
+  if (typeof MathJax === 'undefined') {
+    window.MathJax = {
+      tex: {
+        inlineMath: {'[+]': [['$', '$']]},
+        tags: 'ams'
+      },
+      options: {
+        renderActions: {
+          insertedScript: [200, () => {
+            document.querySelectorAll('mjx-container').forEach(node => {
+              const target = node.parentNode;
+              if (target.nodeName.toLowerCase() === 'li') {
+                target.parentNode.classList.add('has-jax');
+              }
+            });
+          }, '', false]
+        }
+      }
+    };
+    const script = document.createElement('script');
+    script.src = 'https://cdn.jsdelivr.net/npm/mathjax@2.7.8/unpacked/MathJax.js?config=TeX-MML-AM_CHTML';
+    script.defer = true;
+    document.head.appendChild(script);
+  } else {
+    MathJax.startup.document.state(0);
+    MathJax.typesetClear();
+    MathJax.texReset();
+    MathJax.typeset();
+  }
+</script>
+
 
 
 </body>
