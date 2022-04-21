@@ -173,7 +173,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">33</span>
+          <span class="site-state-item-count">34</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -241,10 +241,16 @@
         <i class="far fa-calendar"></i>
       </span>
       <span class="post-meta-item-text">发表于</span>
-      
 
-      <time title="创建时间：2022-04-21 00:00:00 / 修改时间：23:44:31" itemprop="dateCreated datePublished" datetime="2022-04-21T00:00:00+08:00">2022-04-21</time>
+      <time title="创建时间：2022-04-21 00:00:00" itemprop="dateCreated datePublished" datetime="2022-04-21T00:00:00+08:00">2022-04-21</time>
     </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">更新于</span>
+        <time title="修改时间：2022-04-22 00:10:53" itemprop="dateModified" datetime="2022-04-22T00:10:53+08:00">2022-04-22</time>
+      </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
         <i class="far fa-folder"></i>
@@ -291,6 +297,153 @@
             </div>
           <!--/noindex-->
         
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://blog.hidariya.space/2022/04/21/sm3/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Dirac的左矢">
+      <meta itemprop="description" content="这是左矢，他搭了个博客，记录他自己的日常">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="左矢的态矢空间">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2022/04/21/sm3/" class="post-title-link" itemprop="url">统计力学一捅就寄（3）——Boltzmann统计理论</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2022-04-21 00:00:00" itemprop="dateCreated datePublished" datetime="2022-04-21T00:00:00+08:00">2022-04-21</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">更新于</span>
+        <time title="修改时间：2022-04-22 00:21:41" itemprop="dateModified" datetime="2022-04-22T00:21:41+08:00">2022-04-22</time>
+      </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/note/" itemprop="url" rel="index"><span itemprop="name">笔记</span></a>
+        </span>
+    </span>
+
+  
+    <span id="/2022/04/21/sm3/" class="post-meta-item leancloud_visitors" data-flag-title="统计力学一捅就寄（3）——Boltzmann统计理论" title="阅读次数">
+      <span class="post-meta-item-icon">
+        <i class="far fa-eye"></i>
+      </span>
+      <span class="post-meta-item-text">阅读次数：</span>
+      <span class="leancloud-visitors-count"></span>
+    </span>
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h1 id="boltzmann统计理论">Boltzmann统计理论</h1>
+<h2 id="宏观量的统计表达式">宏观量的统计表达式</h2>
+<h3 id="配分函数与宏观量">配分函数与宏观量</h3>
+<p><strong>配分函数<span class="math inline">\(Z\)</span>：</strong> <span class="math display">\[
+Z(\beta, y) \equiv \sum \omega_{i} \exp \left(-\beta \varepsilon_{i}\right)
+\]</span> 两种宏观量：</p>
+<ol type="1">
+<li>有微观对应（如<span class="math inline">\(U\)</span>），为微观对应量的统计平均值</li>
+<li>无微观对应（如<span class="math inline">\(p\)</span>，<span class="math inline">\(T\)</span>，<span class="math inline">\(S\)</span>等），通过热力学与1相关</li>
+</ol>
+<p>时间平均与微观状态平均（系综平均）等价</p>
+<p><strong>一些宏观量的表达式：</strong></p>
+<p><span class="math display">\[
+\begin{aligned}
+  &amp;\alpha=\ln\frac ZN\\
+  &amp;\beta=\frac1{kT}\\
+  &amp;U=\sum_ia_i\varepsilon_i=-N\frac{\partial\ln Z}{\partial\beta}\\
+  &amp;Y_k=\sum_ia_i\frac{\partial\varepsilon_i}{\partial y_k}=-\frac N\beta\frac{\partial\ln Z}{\partial y_k}\\
+  &amp;p=\frac N\beta\frac{\partial\ln Z}{\partial V}\\
+  &amp;S-S&#39;=Nk\left(\ln Z-\beta\frac{\partial\ln Z}{\partial\beta}\right)\\
+  &amp;F=U-TS=-\frac{N}{\beta}\ln Z-TS&#39;\\
+  \end{aligned}
+\]</span></p>
+<h3 id="boltzmann关系">Boltzmann关系</h3>
+<p><span class="math display">\[
+S=k\ln\Omega\{a_i\}
+\]</span></p>
+<p>熵成为无序的度量</p>
+<h4 id="半经典分布">半经典分布</h4>
+<p><span class="math display">\[
+\begin{aligned}
+  &amp;S&#39;=-k\ln N!=Nk(1-\ln N)\\
+  &amp;F=-\frac{N}{\beta}(\ln Z-\ln N+1)\\
+  &amp;\mu=-\frac{\alpha}{\beta}\\
+  \end{aligned}
+\]</span></p>
+<h4 id="boltzmann分布">Boltzmann分布</h4>
+<p><span class="math display">\[
+\begin{aligned}
+  &amp;S&#39;=0\\
+  &amp;F=-\frac{N}{\beta}\ln Z\\
+  &amp;\mu=-\frac{\ln Z}\beta\\
+  \end{aligned}
+\]</span></p>
+<h2 id="半经典近似">半经典近似</h2>
+<p>（不是半经典分布，两码事）</p>
+<p>能级趋于连续（<span class="math inline">\(\Delta \varepsilon_i\ll k_BT\)</span>），用积分代替求和，粒子为相空间中大小为<span class="math inline">\(h^\gamma\)</span>的体积元</p>
+<p>体积元<span class="math inline">\(d\omega=d^\gamma q\ d^\gamma p\)</span></p>
+<p><strong>配分函数：</strong> <span class="math display">\[
+\begin{aligned}
+Z(\beta,y)&amp;=\int h^{-\gamma}\exp \left(-\beta H(p,q,y)\right)d\omega\\
+&amp;=\int_0^\infty g(\varepsilon)\exp(-\beta\varepsilon)d\varepsilon
+\end{aligned}
+\]</span> <strong>能态密度<span class="math inline">\(g\)</span>：</strong> <span class="math display">\[
+g(\varepsilon)=h^{-\gamma}\frac{d}{d\varepsilon}\int_{H\le\varepsilon}d\omega
+\]</span></p>
+<blockquote>
+<p>注意<span class="math inline">\(Z\)</span>是无量纲数，积分记得在全相空间积分，不要漏变量，也不要漏<span class="math inline">\(h^\gamma\)</span></p>
+</blockquote>
+<p><strong>つづく</strong></p>
+<p>（写到这的时候mathpix当月额度已经用完了，下个月再说吧）</p>
+
       
     </div>
 
@@ -1108,95 +1261,6 @@ Q^\dagger=Q
           <!--noindex-->
             <div class="post-button">
               <a class="btn" href="/2021/09/22/qm2/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://blog.hidariya.space/2021/09/18/t3w1/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Dirac的左矢">
-      <meta itemprop="description" content="这是左矢，他搭了个博客，记录他自己的日常">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="左矢的态矢空间">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2021/09/18/t3w1/" class="post-title-link" itemprop="url">Week 1：回到现实</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">发表于</span>
-      
-
-      <time title="创建时间：2021-09-18 00:00:00 / 修改时间：22:30:28" itemprop="dateCreated datePublished" datetime="2021-09-18T00:00:00+08:00">2021-09-18</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">分类于</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/diary/" itemprop="url" rel="index"><span itemprop="name">日常</span></a>
-        </span>
-    </span>
-
-  
-    <span id="/2021/09/18/t3w1/" class="post-meta-item leancloud_visitors" data-flag-title="Week 1：回到现实" title="阅读次数">
-      <span class="post-meta-item-icon">
-        <i class="far fa-eye"></i>
-      </span>
-      <span class="post-meta-item-text">阅读次数：</span>
-      <span class="leancloud-visitors-count"></span>
-    </span>
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <p>第一周是适应中的一周，一个月没碰物理的我，看着黑板上松神写下的那些符号，陷入了深深的恐惧和迷茫。</p>
-<p><img src="https://blog.hidariya.space/2021/09/18/t3w1/-56e956bf373b08b4.jpg"></p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2021/09/18/t3w1/#more" rel="contents">
                 阅读全文 &raquo;
               </a>
             </div>
