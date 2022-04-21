@@ -173,7 +173,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">32</span>
+          <span class="site-state-item-count">33</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -218,6 +218,128 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://blog.hidariya.space/2022/04/21/sm2/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Dirac的左矢">
+      <meta itemprop="description" content="这是左矢，他搭了个博客，记录他自己的日常">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="左矢的态矢空间">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2022/04/21/sm2/" class="post-title-link" itemprop="url">统计力学一捅就寄（2）——统计法</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+      
+
+      <time title="创建时间：2022-04-21 00:00:00 / 修改时间：19:23:48" itemprop="dateCreated datePublished" datetime="2022-04-21T00:00:00+08:00">2022-04-21</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/note/" itemprop="url" rel="index"><span itemprop="name">笔记</span></a>
+        </span>
+    </span>
+
+  
+    <span id="/2022/04/21/sm2/" class="post-meta-item leancloud_visitors" data-flag-title="统计力学一捅就寄（2）——统计法" title="阅读次数">
+      <span class="post-meta-item-icon">
+        <i class="far fa-eye"></i>
+      </span>
+      <span class="post-meta-item-text">阅读次数：</span>
+      <span class="leancloud-visitors-count"></span>
+    </span>
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h1 id="近独立粒子系统的统计分布">近独立粒子系统的统计分布</h1>
+<h2 id="统计法大意">统计法大意</h2>
+<p>力学规律与统计规律：</p>
+<ul>
+<li><p>单粒子的力学规律：决定论的（量子力学、经典力学）</p></li>
+<li><p>宏观系统统计规律：非决定论的，几率性的</p></li>
+</ul>
+<p>（概率论方面懂的都懂，摸了）</p>
+<p>绝对涨落：<span class="math inline">\(\Delta \bar{x} \equiv \sqrt{\overline{(x-\bar{x})^{2}}}=\sqrt{\overline{x^{2}}-(\bar{x})^{2}}\)</span></p>
+<p>相对涨落：<span class="math inline">\(\delta \bar{x} \equiv \Delta \bar{x} / \bar{x}\)</span></p>
+<p>（其实就是标准差，非得起个名字叫涨落）</p>
+<p><strong>二项分布：</strong> <span class="math display">\[
+P_{N}(n)=\frac{N !}{n !(N-n) !} p^{n} q^{N-n}
+\]</span> <span class="math inline">\(N\gg1，p\ll1\)</span>时，二项分布趋近于<strong>泊松分布</strong>： <span class="math display">\[
+P_{N}(n)=\frac{(\bar{n})^{n}}{n !} e^{-\bar{n}}
+\]</span> <span class="math inline">\(N\gg1\)</span>，且<span class="math inline">\(p\)</span>，<span class="math inline">\(q\)</span>相差不大时，二项分布趋近于<strong>高斯分布</strong>： <span class="math display">\[
+P_{N}(n)=\frac{1}{\sqrt{2 \pi \sigma^{2}}} e^{-\frac{(n-\bar{n})^{2}}{2 \sigma^{2}}}\quad(\sigma^{2}=N p q)
+\]</span> <span class="math inline">\(\delta n\approx\sqrt{\frac{pq}{N}}\)</span>，对于阿伏伽德罗常数量级的<span class="math inline">\(N\)</span>，相对涨落小得离谱</p>
+<h2 id="近独立粒子系统">近独立粒子系统</h2>
+<p>近独立粒子系统：粒子间作用能&lt;<单个粒子能> 不能无相互作用，无作用则无法平衡</单个粒子能></p>
+<p>系统能量：<span class="math inline">\(E=\sum_{i} a_{i} \varepsilon_{i}\)</span></p>
+<blockquote>
+<p><span class="math inline">\(\varepsilon_i\)</span>，单粒子的第<span class="math inline">\(i\)</span>能级</p>
+<p><span class="math inline">\(a_i\)</span>，处于第<span class="math inline">\(i\)</span>能级的粒子数</p>
+</blockquote>
+<h2 id="单粒子状态的量子描述">单粒子状态的量子描述</h2>
+<p>常见能级分布：</p>
+<ul>
+<li><p>无限深方势阱 <span class="math display">\[
+\varepsilon_{n}=\frac{h^{2} n^{2}}{8 m L^{2}}\quad\omega_n=1
+\]</span></p></li>
+<li><p>谐振子 <span class="math display">\[
+\varepsilon_{n}=\hbar \omega\left(n+\frac{1}{2}\right)\quad\omega_n=1
+\]</span></p></li>
+<li><p>三维转子 <span class="math display">\[
+\varepsilon_{l}=\frac{\hbar^{2}}{2 I} l(l+1)\quad\omega_l=2l+1
+\]</span></p></li>
+</ul>
+<h2 id="系统状态的量子描述">系统状态的量子描述</h2>
+<p>要求全同粒子、全同性原理</p>
+<p><strong>微观态</strong>：粒子按<strong>量子态</strong>的一个分配方式</p>
+<p><strong>宏观态</strong>：粒子按<strong>能级</strong>的一个分布</p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
     <link itemprop="mainEntityOfPage" href="https://blog.hidariya.space/2022/04/20/sm1/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -249,7 +371,7 @@
           <i class="far fa-calendar-check"></i>
         </span>
         <span class="post-meta-item-text">更新于</span>
-        <time title="修改时间：2022-04-21 18:19:46" itemprop="dateModified" datetime="2022-04-21T18:19:46+08:00">2022-04-21</time>
+        <time title="修改时间：2022-04-21 18:32:52" itemprop="dateModified" datetime="2022-04-21T18:32:52+08:00">2022-04-21</time>
       </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -278,10 +400,20 @@
     
     
     <div class="post-body" itemprop="articleBody">
-          <p>倪军统计力学1~7讲</p>
+          <p>这篇笔记是整理倪军统计力学1~4周课上的内容，主要是热力学唯象理论。</p>
+<h3 id="基本概念">基本概念</h3>
+<ul>
+<li>热力学系统：<strong>大量</strong>微观粒子组成的<strong>有限</strong>宏观体系</li>
+<li>孤立：无物质、能量交换（绝热）</li>
+<li>封闭：无物质交换</li>
+<li>开放：物质能量都有交换</li>
+<li>平衡态：宏观量不随时间变化</li>
+<li>自由度：独立的宏观量数目（几何、力学、化学、电磁）</li>
+<li>准静态过程：过程足够慢（相对与弛豫时间而言），无限接近平衡态</li>
+</ul>
           <!--noindex-->
             <div class="post-button">
-              <a class="btn" href="/2022/04/20/sm1/">
+              <a class="btn" href="/2022/04/20/sm1/#more" rel="contents">
                 阅读全文 &raquo;
               </a>
             </div>
@@ -638,7 +770,7 @@
           <i class="far fa-calendar-check"></i>
         </span>
         <span class="post-meta-item-text">更新于</span>
-        <time title="修改时间：2022-04-21 18:17:23" itemprop="dateModified" datetime="2022-04-21T18:17:23+08:00">2022-04-21</time>
+        <time title="修改时间：2022-04-21 18:24:38" itemprop="dateModified" datetime="2022-04-21T18:24:38+08:00">2022-04-21</time>
       </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -674,6 +806,7 @@
 <p>数学定义：完备的<strong>内积空间</strong>，一般有<strong>无穷维</strong></p>
 <p>量子力学加了一些要求：<strong>复数域</strong>、所有元素平方可积（<strong>可归一化</strong>）</p>
 <p><strong>==波函数生活在希尔伯特空间上==</strong><a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></p>
+<!-- more -->
 <p>无穷维矢量不好写指标，于是狄拉克他直接放弃了指标，采用了船新的记号，将希尔伯特空间的矢量记为<strong>右矢</strong> <span class="math inline">\(|\alpha\rangle\)</span> ，对偶矢量记为<strong>左矢</strong> <span class="math inline">\(\langle\alpha|\)</span> 。左矢和右矢互为<strong>共轭转置</strong></p>
 <p>一切线性代数的操作顺理成章推广到无穷维</p>
 <h4 id="内积">内积</h4>
@@ -962,7 +1095,7 @@ Q^\dagger=Q
           <i class="far fa-calendar-check"></i>
         </span>
         <span class="post-meta-item-text">更新于</span>
-        <time title="修改时间：2022-04-21 18:16:52" itemprop="dateModified" datetime="2022-04-21T18:16:52+08:00">2022-04-21</time>
+        <time title="修改时间：2022-04-21 18:24:15" itemprop="dateModified" datetime="2022-04-21T18:24:15+08:00">2022-04-21</time>
       </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -991,46 +1124,19 @@ Q^\dagger=Q
     
     
     <div class="post-body" itemprop="articleBody">
-          <span id="more"></span>
-<h2 id="定态">定态</h2>
+          <h2 id="定态">定态</h2>
 <h3 id="定态薛定谔方程">定态薛定谔方程</h3>
 <p><strong>势函数不含时（能量守恒）条件下</strong>，概率分布不随时间变化。因此可以将空间因子和时间因子分离 <span class="math display">\[
 \Psi(x,t)=\psi(x)\phi(t)
 \]</span> 其中 <span class="math inline">\(\psi\)</span> 和 <span class="math inline">\(\phi\)</span> 各自归一化。</p>
-<p>代入薛定谔方程，一通分离变量操作，得到两个方程 <span class="math display">\[
-\hat H\psi(x)=E\psi(x)\\\\
-i\hbar\frac\partial{\partial t}\phi(t)=E\phi(t)
-\]</span> 其中 <span class="math inline">\(E\)</span> 即为哈密顿算符的本征值。</p>
-<p>解得定态波函数 <span class="math display">\[
-\Psi(x,t)=\psi(x)e^{-iEt/\hbar}
-\]</span> <span class="math inline">\(\psi\)</span> 满足的方程代入一维哈密顿算符即得到<strong>一维定态薛定谔方程</strong> <span class="math display">\[
-[-\frac{\hbar^2}{2m}\frac {d^2}{dx^2}+V(x)]\psi(x)=E\psi(x)
-\]</span> 也就是唯一有可能被我解出来的方程</p>
-<h3 id="定态波函数的特性">定态波函数的特性</h3>
-<ol type="1">
-<li>定态波函数本身含时，但时间因子会在取共轭时约掉。因此波函数模方（即<strong>概率密度</strong>）以及所有<strong>物理量的期望</strong>都<strong>不含时</strong>。</li>
-<li>本征值 <span class="math inline">\(E\)</span> 即为定态所对应的能量，能量<strong>守恒</strong>且<strong>确定</strong>（方差为0）<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></li>
-<li>本征值不同的定态叠加不是定态，模方含时</li>
-</ol>
-<p>所有的定态构成了薛定谔方程通解的一组基，任意解都可如此分解： <span class="math display">\[
-\Psi(x,t)=\sum_{n=1}^\infty c_n\psi_n(x)e^{-iE_nt/\hbar}
-\]</span></p>
-<h3 id="一维定态波函数的定性分析">一维定态波函数的定性分析</h3>
-<p>整理一下方程 <span class="math display">\[
-\frac{d^2\psi}{dx^2}+\frac{2m}{\hbar^2}[E-V(x)]\psi=0
-\]</span></p>
-<ol type="1">
-<li><span class="math inline">\(E&lt;V\)</span> 时， <span class="math inline">\(\frac{d^2\psi}{dx^2}\)</span> 与 <span class="math inline">\(\psi\)</span> 符号相同，向远离x轴的方向弯曲，类似指数增长和指数衰减，对应<strong>经典禁区</strong>。</li>
-<li><span class="math inline">\(E&gt;V\)</span> 时， <span class="math inline">\(\frac{d^2\psi}{dx^2}\)</span> 与 <span class="math inline">\(\psi\)</span> 符号相反，向靠近x轴的方向弯曲，类似正弦函数，对应<strong>经典允许区</strong>。</li>
-</ol>
-<p><em>つづく</em></p>
-<section class="footnotes" role="doc-endnotes">
-<hr>
-<ol>
-<li id="fn1" role="doc-endnote"><p>前提是观测时间无限长。既然体系不随时间演化，这个条件自然满足。<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-</ol>
-</section>
-
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2021/09/22/qm2/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
@@ -1115,101 +1221,6 @@ i\hbar\frac\partial{\partial t}\phi(t)=E\phi(t)
           <!--noindex-->
             <div class="post-button">
               <a class="btn" href="/2021/09/18/t3w1/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://blog.hidariya.space/2021/09/15/qm1/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Dirac的左矢">
-      <meta itemprop="description" content="这是左矢，他搭了个博客，记录他自己的日常">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="左矢的态矢空间">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2021/09/15/qm1/" class="post-title-link" itemprop="url">量子力学量力学（1）</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">发表于</span>
-
-      <time title="创建时间：2021-09-15 00:00:00" itemprop="dateCreated datePublished" datetime="2021-09-15T00:00:00+08:00">2021-09-15</time>
-    </span>
-      <span class="post-meta-item">
-        <span class="post-meta-item-icon">
-          <i class="far fa-calendar-check"></i>
-        </span>
-        <span class="post-meta-item-text">更新于</span>
-        <time title="修改时间：2022-04-21 18:16:19" itemprop="dateModified" datetime="2022-04-21T18:16:19+08:00">2022-04-21</time>
-      </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">分类于</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/note/" itemprop="url" rel="index"><span itemprop="name">笔记</span></a>
-        </span>
-    </span>
-
-  
-    <span id="/2021/09/15/qm1/" class="post-meta-item leancloud_visitors" data-flag-title="量子力学量力学（1）" title="阅读次数">
-      <span class="post-meta-item-icon">
-        <i class="far fa-eye"></i>
-      </span>
-      <span class="post-meta-item-text">阅读次数：</span>
-      <span class="leancloud-visitors-count"></span>
-    </span>
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <p>猛然发现这个博客一篇正经学习笔记都没有，这好吗，这不好。既然起了左矢这个名字，至少得写点跟左矢有关的东西。</p>
-<p>这学期同时选了徐湛老师的费曼3和尤力老师的量力，相当于同时从两个角度学量子力学，进行了一个课程的简并。这博客也算是能帮我理清一下思路。</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2021/09/15/qm1/#more" rel="contents">
                 阅读全文 &raquo;
               </a>
             </div>
