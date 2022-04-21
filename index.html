@@ -249,7 +249,7 @@
           <i class="far fa-calendar-check"></i>
         </span>
         <span class="post-meta-item-text">更新于</span>
-        <time title="修改时间：2022-04-21 16:19:47" itemprop="dateModified" datetime="2022-04-21T16:19:47+08:00">2022-04-21</time>
+        <time title="修改时间：2022-04-21 16:26:55" itemprop="dateModified" datetime="2022-04-21T16:26:55+08:00">2022-04-21</time>
       </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -309,15 +309,18 @@
 </blockquote>
 <p><strong>热力学第一定律：</strong></p>
 <ul>
-<li><p>封闭系统： <span class="math display">\[
+<li>封闭系统： <span class="math display">\[
 d U=\bar d w+\bar d Q
-\]</span></p></li>
-<li><p>开放系统：</p></li>
-</ul>
-<p><span class="math display">\[
+\]</span></li>
+<li>开放系统： <span class="math display">\[
 d U=\bar d w+\bar d Q+\sum_{i} \mu_{i} d N_{i}
-\]</span></p>
-<p>热容量： * 定容热容量：<span class="math inline">\(C_{V}=\lim _{\Delta T \rightarrow 0}\left(\frac{\Delta Q}{\Delta T}\right)_{V} =\left(\frac{\partial U}{\partial T}\right)_{V}\)</span> * 定压热容量：<span class="math inline">\(C_{p}=\lim _{\Delta T \rightarrow 0}\left(\frac{\Delta Q}{\Delta T}\right)_{p}=\left(\frac{\partial H}{\partial T}\right)_{p}\)</span></p>
+\]</span></li>
+</ul>
+<p>热容量：</p>
+<ul>
+<li>定容热容量：<span class="math inline">\(C_{V}=\lim _{\Delta T \rightarrow 0}\left(\frac{\Delta Q}{\Delta T}\right)_{V} =\left(\frac{\partial U}{\partial T}\right)_{V}\)</span></li>
+<li>定压热容量：<span class="math inline">\(C_{p}=\lim _{\Delta T \rightarrow 0}\left(\frac{\Delta Q}{\Delta T}\right)_{p}=\left(\frac{\partial H}{\partial T}\right)_{p}\)</span></li>
+</ul>
 <blockquote>
 <p><strong>焓</strong><span class="math inline">\(H\)</span>：<span class="math inline">\(H=U+pV\)</span></p>
 </blockquote>
@@ -328,29 +331,23 @@ d U(T, V)=C_{V} d T+\left[\left(C_{p}-C_{V}\right)\left(\frac{\partial T}{\parti
 <p>即宏观的自发过程的不可逆性</p>
 <p>克劳修斯表述：不可能把热量从低温物体传到高温物体而不引起其他变化</p>
 <p>开尔文表述：不可能从单一热源吸热使之完全变成有用功而不引起其他变化</p>
-<p>卡诺定理： ​ 在相同高低温热源之间工作的热机，可逆热机的效率最高，<span class="math inline">\(\eta=1-\frac{Q_{2}}{Q_{1}}=1-\frac{T_{2}}{T_{1}}\)</span></p>
-<p>克劳修斯不等式： <span class="math inline">\(\oint \frac{d Q}{T} \leq 0\)</span>，可逆过程取=</p>
+<p>卡诺定理：在相同高低温热源之间工作的热机，可逆热机的效率最高，<span class="math inline">\(\eta=1-\frac{Q_{2}}{Q_{1}}=1-\frac{T_{2}}{T_{1}}\)</span></p>
+<p>克劳修斯不等式：<span class="math inline">\(\oint \frac{d Q}{T} \leq 0\)</span>（可逆过程取=）</p>
 <p>热力学<strong>熵S</strong>：<span class="math inline">\(\Delta S=\int_{i}^{f} \frac{d Q}{T}\)</span>（可逆过程）</p>
-<p><strong>热力学基本关系（可逆、准静态过程<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>）：</strong> <span class="math display">\[
+<p><strong>热力学基本关系（可逆、准静态过程<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>）：</strong> ==<span class="math display">\[
 d U=T d S+\sum_{k} Y_{k} d y_{k}
-\]</span></p>
+\]</span>==</p>
 <p><strong>熵增原理：绝热过程，恒有<span class="math inline">\(dS\ge0\)</span></strong> →可判断不可逆过程的方向</p>
-<p>热力学第二定律的第三种表述：孤立系统的熵不减</p>
+<p>热二的第三种表述：孤立系统的熵不减</p>
 <p>非绝热过程进行方向：</p>
 <ul>
-<li>等<span class="math inline">\(T\)</span>等<span class="math inline">\(V\)</span>过程：<span class="math inline">\(dF\le0\)</span>
-<ul>
-<li><blockquote>
-<p><strong>亥姆霍兹自由能</strong><span class="math inline">\(F\)</span>：<span class="math inline">\(F=U-TS\)</span></p>
-</blockquote></li>
-</ul></li>
-<li>等<span class="math inline">\(T\)</span>等<span class="math inline">\(p\)</span>过程：<span class="math inline">\(dG\le0\)</span>
-<ul>
-<li><blockquote>
-<p><strong>吉布斯自由能</strong><span class="math inline">\(G\)</span>：<span class="math inline">\(G=U-TS+pV\)</span></p>
-</blockquote></li>
-</ul></li>
+<li>等<span class="math inline">\(T\)</span>等<span class="math inline">\(V\)</span>过程：<span class="math inline">\(dF\le0\)</span></li>
+<li>等<span class="math inline">\(T\)</span>等<span class="math inline">\(p\)</span>过程：<span class="math inline">\(dG\le0\)</span></li>
 </ul>
+<blockquote>
+<p><strong>亥姆霍兹自由能</strong><span class="math inline">\(F\)</span>：<span class="math inline">\(F=U-TS\)</span></p>
+<p><strong>吉布斯自由能</strong><span class="math inline">\(G\)</span>：<span class="math inline">\(G=U-TS+pV\)</span></p>
+</blockquote>
 <h2 id="均匀物质的热力学性质">均匀物质的热力学性质</h2>
 <p>以封闭，静流体系流为例，其它系统类似</p>
 <p>出发点：<span class="math inline">\(dU=TdS-pdV\)</span>（可逆）+ 物态方程</p>
