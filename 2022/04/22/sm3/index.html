@@ -23,15 +23,15 @@
     var NexT = window.NexT || {};
     var CONFIG = {"hostname":"blog.hidariya.space","root":"/","images":"/images","scheme":"Pisces","version":"8.3.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":"disqus","storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}};
   </script>
-<meta name="description" content="Boltzmann统计理论 宏观量的统计表达式 配分函数与宏观量 配分函数\(Z\)： \[ Z(\beta, y) \equiv \sum \omega_{i} \exp \left(-\beta \varepsilon_{i}\right) \] 两种宏观量：  有微观对应（如\(U\)），为微观对应量的统计平均值 无微观对应（如\(p\)，\(T\)，\(S\)等），通过热力">
+<meta name="description" content="Boltzmann统计理论 宏观量的统计表达式 配分函数与宏观量 配分函数\(Z\)： \[ Z(\beta, y) \equiv \sum_i \omega_{i} \exp \left(-\beta \varepsilon_{i}\right) \] (单粒子体系，不是系综) 两种宏观量：  有微观对应（如\(U\)），为微观对应量的统计平均值 无微观对应（如\(p\)，\(">
 <meta property="og:type" content="article">
 <meta property="og:title" content="统计力学一捅就寄（3）——Boltzmann统计理论">
 <meta property="og:url" content="https://blog.hidariya.space/2022/04/22/sm3/index.html">
 <meta property="og:site_name" content="左矢的态矢空间">
-<meta property="og:description" content="Boltzmann统计理论 宏观量的统计表达式 配分函数与宏观量 配分函数\(Z\)： \[ Z(\beta, y) \equiv \sum \omega_{i} \exp \left(-\beta \varepsilon_{i}\right) \] 两种宏观量：  有微观对应（如\(U\)），为微观对应量的统计平均值 无微观对应（如\(p\)，\(T\)，\(S\)等），通过热力">
+<meta property="og:description" content="Boltzmann统计理论 宏观量的统计表达式 配分函数与宏观量 配分函数\(Z\)： \[ Z(\beta, y) \equiv \sum_i \omega_{i} \exp \left(-\beta \varepsilon_{i}\right) \] (单粒子体系，不是系综) 两种宏观量：  有微观对应（如\(U\)），为微观对应量的统计平均值 无微观对应（如\(p\)，\(">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2022-04-21T16:00:00.000Z">
-<meta property="article:modified_time" content="2022-04-21T16:30:06.154Z">
+<meta property="article:modified_time" content="2022-06-14T16:03:47.950Z">
 <meta property="article:author" content="Dirac的左矢">
 <meta property="article:tag" content="博客 物理 清华大学">
 <meta name="twitter:card" content="summary">
@@ -162,7 +162,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#boltzmann%E7%BB%9F%E8%AE%A1%E7%90%86%E8%AE%BA"><span class="nav-number">1.</span> <span class="nav-text">Boltzmann统计理论</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AE%8F%E8%A7%82%E9%87%8F%E7%9A%84%E7%BB%9F%E8%AE%A1%E8%A1%A8%E8%BE%BE%E5%BC%8F"><span class="nav-number">1.1.</span> <span class="nav-text">宏观量的统计表达式</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%85%8D%E5%88%86%E5%87%BD%E6%95%B0%E4%B8%8E%E5%AE%8F%E8%A7%82%E9%87%8F"><span class="nav-number">1.1.1.</span> <span class="nav-text">配分函数与宏观量</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#boltzmann%E5%85%B3%E7%B3%BB"><span class="nav-number">1.1.2.</span> <span class="nav-text">Boltzmann关系</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%8D%8A%E7%BB%8F%E5%85%B8%E5%88%86%E5%B8%83"><span class="nav-number">1.1.2.1.</span> <span class="nav-text">半经典分布</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#boltzmann%E5%88%86%E5%B8%83"><span class="nav-number">1.1.2.2.</span> <span class="nav-text">Boltzmann分布</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8D%8A%E7%BB%8F%E5%85%B8%E8%BF%91%E4%BC%BC"><span class="nav-number">1.2.</span> <span class="nav-text">半经典近似</span></a></li></ol></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#boltzmann%E7%BB%9F%E8%AE%A1%E7%90%86%E8%AE%BA"><span class="nav-number">1.</span> <span class="nav-text">Boltzmann统计理论</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AE%8F%E8%A7%82%E9%87%8F%E7%9A%84%E7%BB%9F%E8%AE%A1%E8%A1%A8%E8%BE%BE%E5%BC%8F"><span class="nav-number">1.1.</span> <span class="nav-text">宏观量的统计表达式</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%85%8D%E5%88%86%E5%87%BD%E6%95%B0%E4%B8%8E%E5%AE%8F%E8%A7%82%E9%87%8F"><span class="nav-number">1.1.1.</span> <span class="nav-text">配分函数与宏观量</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#boltzmann%E5%85%B3%E7%B3%BB"><span class="nav-number">1.1.2.</span> <span class="nav-text">Boltzmann关系</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%8D%8A%E7%BB%8F%E5%85%B8%E5%88%86%E5%B8%83"><span class="nav-number">1.1.2.1.</span> <span class="nav-text">半经典分布</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#boltzmann%E5%88%86%E5%B8%83"><span class="nav-number">1.1.2.2.</span> <span class="nav-text">Boltzmann分布</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8D%8A%E7%BB%8F%E5%85%B8%E8%BF%91%E4%BC%BC"><span class="nav-number">1.2.</span> <span class="nav-text">半经典近似</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%80%E4%BA%9B%E5%B8%B8%E8%A7%81%E5%8D%8A%E7%BB%8F%E5%85%B8%E8%BF%91%E4%BC%BC%E4%BD%93%E7%B3%BB"><span class="nav-number">1.2.1.</span> <span class="nav-text">一些常见半经典近似体系</span></a></li></ol></li></ol></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -176,7 +176,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">35</span>
+          <span class="site-state-item-count">36</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -245,10 +245,16 @@
         <i class="far fa-calendar"></i>
       </span>
       <span class="post-meta-item-text">发表于</span>
-      
 
-      <time title="创建时间：2022-04-22 00:00:00 / 修改时间：00:30:06" itemprop="dateCreated datePublished" datetime="2022-04-22T00:00:00+08:00">2022-04-22</time>
+      <time title="创建时间：2022-04-22 00:00:00" itemprop="dateCreated datePublished" datetime="2022-04-22T00:00:00+08:00">2022-04-22</time>
     </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">更新于</span>
+        <time title="修改时间：2022-06-15 00:03:47" itemprop="dateModified" datetime="2022-06-15T00:03:47+08:00">2022-06-15</time>
+      </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
         <i class="far fa-folder"></i>
@@ -280,16 +286,16 @@
 <h2 id="宏观量的统计表达式">宏观量的统计表达式</h2>
 <h3 id="配分函数与宏观量">配分函数与宏观量</h3>
 <p><strong>配分函数<span class="math inline">\(Z\)</span>：</strong> <span class="math display">\[
-Z(\beta, y) \equiv \sum \omega_{i} \exp \left(-\beta \varepsilon_{i}\right)
-\]</span> 两种宏观量：</p>
+Z(\beta, y) \equiv \sum_i \omega_{i} \exp \left(-\beta \varepsilon_{i}\right)
+\]</span> (单粒子体系，不是系综)</p>
+<p>两种宏观量：</p>
 <ol type="1">
 <li>有微观对应（如<span class="math inline">\(U\)</span>），为微观对应量的统计平均值</li>
 <li>无微观对应（如<span class="math inline">\(p\)</span>，<span class="math inline">\(T\)</span>，<span class="math inline">\(S\)</span>等），通过热力学与1相关</li>
 </ol>
 <p>时间平均与微观状态平均（系综平均）等价</p>
 <span id="more"></span>
-<p><strong>一些宏观量的表达式：</strong></p>
-<p><span class="math display">\[
+<p><strong>一些宏观量的表达式：</strong> <span class="math display">\[
 \begin{aligned}
   &amp;\alpha=\ln\frac ZN\\
   &amp;\beta=\frac1{kT}\\
@@ -336,8 +342,77 @@ g(\varepsilon)=h^{-\gamma}\frac{d}{d\varepsilon}\int_{H\le\varepsilon}d\omega
 <blockquote>
 <p>注意<span class="math inline">\(Z\)</span>是无量纲数，积分记得在全相空间积分，不要漏变量，也不要漏<span class="math inline">\(h^\gamma\)</span></p>
 </blockquote>
+<p>N维球体积： <span class="math display">\[
+V_N=\frac{2\pi^{N/2}}{N\Gamma(N/2)}R^N
+\]</span></p>
+<h3 id="一些常见半经典近似体系">一些常见半经典近似体系</h3>
+<table>
+<colgroup>
+<col style="width: 9%">
+<col style="width: 36%">
+<col style="width: 23%">
+<col style="width: 29%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>体系</th>
+<th>哈密顿量<span class="math inline">\(\varepsilon=H(q,p)\)</span></th>
+<th>相体积<span class="math inline">\(\Sigma(\varepsilon)\)</span></th>
+<th>能态密度<span class="math inline">\(g(\varepsilon)\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>一维谐振子</td>
+<td><span class="math inline">\(\frac{p_x^2}{2m}+\frac12m\omega^2x^2\)</span></td>
+<td><span class="math inline">\(\frac{2\pi\varepsilon}{\omega}\)</span></td>
+<td><span class="math inline">\(\frac{1}{\hbar\omega}\)</span></td>
+</tr>
+<tr class="even">
+<td>转子</td>
+<td><span class="math inline">\(\frac{1}{2I}\left(p_\theta^2+\frac{p_\phi^2}{\sin^2\theta}\right)\)</span></td>
+<td><span class="math inline">\(8\pi^2I\varepsilon\)</span></td>
+<td><span class="math inline">\(\frac{2I}{\hbar^2}\)</span></td>
+</tr>
+<tr class="odd">
+<td>三维非相对论平动</td>
+<td><span class="math inline">\(\frac{1}{2m}\left(p_x^2+p_y^2+p_z^2\right)\)</span></td>
+<td><span class="math inline">\(\frac{4}{3}\pi V(2m\varepsilon)^{3/2}\)</span></td>
+<td><span class="math inline">\(\frac{2\pi V}{h^3}(2m)^{3/2}\sqrt{\varepsilon}\)</span></td>
+</tr>
+<tr class="even">
+<td>三维相对论平动</td>
+<td><span class="math inline">\(c\sqrt{p_x^2+p_y^2+p_z^2}\)</span></td>
+<td><span class="math inline">\(\frac{4\pi V}{3c^3}\varepsilon^3\)</span></td>
+<td><span class="math inline">\(\frac{4\pi V}{h^3c^3}\varepsilon^2\)</span></td>
+</tr>
+<tr class="odd">
+<td>二维非相对论平动</td>
+<td><span class="math inline">\(\frac{1}{2m}\left(p_x^2+p_y^2\right)\)</span></td>
+<td><span class="math inline">\(2\pi mV\varepsilon\)</span></td>
+<td><span class="math inline">\(\frac{2\pi mV}{h^2}\)</span></td>
+</tr>
+<tr class="even">
+<td>二维相对论平动</td>
+<td><span class="math inline">\(c\sqrt{p_x^2+p_y^2}\)</span></td>
+<td><span class="math inline">\(\frac{\pi V}{c^2}\varepsilon^2\)</span></td>
+<td><span class="math inline">\(\frac{2\pi V}{h^2c^2}\varepsilon\)</span></td>
+</tr>
+<tr class="odd">
+<td>一维非相对论平动</td>
+<td><span class="math inline">\(\frac{p_x^2}{2m}\)</span></td>
+<td><span class="math inline">\(2\sqrt{2m\varepsilon}V\)</span></td>
+<td><span class="math inline">\(\sqrt{\frac{2m}{h^2\varepsilon}}V\)</span></td>
+</tr>
+<tr class="even">
+<td>一维相对论平动</td>
+<td><span class="math inline">\(c|p_x|\)</span></td>
+<td><span class="math inline">\(\frac{2V}{c}\varepsilon\)</span></td>
+<td><span class="math inline">\(\frac{2V}{hc}\)</span></td>
+</tr>
+</tbody>
+</table>
 <p><strong>つづく</strong></p>
-<p>（写到这的时候mathpix当月额度已经用完了，下个月再说吧）</p>
 
     </div>
 

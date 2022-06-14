@@ -173,7 +173,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">35</span>
+          <span class="site-state-item-count">36</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -209,6 +209,206 @@
 
 
     <div class="main-inner index posts-expand">
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://blog.hidariya.space/2022/06/14/sm4/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Dirac的左矢">
+      <meta itemprop="description" content="这是左矢，他搭了个博客，记录他自己的日常">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="左矢的态矢空间">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2022/06/14/sm4/" class="post-title-link" itemprop="url">统计力学一捅就寄（4）——Bose统计与Fermi统计理论</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+      
+
+      <time title="创建时间：2022-06-14 00:00:00 / 修改时间：21:01:57" itemprop="dateCreated datePublished" datetime="2022-06-14T00:00:00+08:00">2022-06-14</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/note/" itemprop="url" rel="index"><span itemprop="name">笔记</span></a>
+        </span>
+    </span>
+
+  
+    <span id="/2022/06/14/sm4/" class="post-meta-item leancloud_visitors" data-flag-title="统计力学一捅就寄（4）——Bose统计与Fermi统计理论" title="阅读次数">
+      <span class="post-meta-item-icon">
+        <i class="far fa-eye"></i>
+      </span>
+      <span class="post-meta-item-text">阅读次数：</span>
+      <span class="leancloud-visitors-count"></span>
+    </span>
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h1 id="bose统计与fermi统计理论">Bose统计与Fermi统计理论</h1>
+<p>平衡分布： <span class="math display">\[
+a_{i}=\frac{\omega_{i}}{\exp \left(\alpha+\beta \varepsilon_{i}\right) \pm 1}\left\{\begin{array}{l}
++\text { Fermi } \\
+-\text { Bose }
+\end{array}\right.
+\]</span> 非简并条件（Bose,Fermi→Boltzmann）： <span class="math display">\[
+x=n\lambda_T^3\ll1,\quad\lambda_{T} \equiv\left(\frac{h^{2}}{2 \pi m k_{B} T}\right)^{1 / 2}
+\]</span> 不满足非简并条件的气体</p>
+<ul>
+<li><span class="math inline">\(x&lt;1\)</span>，弱简并，宏观量可对<span class="math inline">\(x\)</span>展开，量子修正</li>
+<li><span class="math inline">\(x&gt;1\)</span>，简并，性质显著不同</li>
+</ul>
+<h2 id="宏观量统计表达式">宏观量统计表达式</h2>
+<p><strong>巨配分函数<span class="math inline">\(\Xi\)</span>:</strong> <span class="math display">\[
+\Xi(\alpha, \beta, y)=\prod_{i}\left(1 \pm e^{-\alpha-\beta \varepsilon_{i}}\right)^{\pm \omega_{i}}=\prod_{i}\Xi_i
+\]</span></p>
+<p><span class="math display">\[
+\ln \Xi=\pm \sum_{i} \omega_{i} \ln \left(1 \pm e^{-\alpha-\beta \varepsilon_{i}}\right)
+\]</span></p>
+<p>（体系粒子数可变）</p>
+<strong>一些宏观量的表达式：</strong> $$
+<span class="math display">\[\begin{aligned}
+&amp;N=\sum_{i} a_{i}=\sum_{i} \frac{\omega_{i}}{\exp \left(\alpha+\beta \varepsilon_{i}\right) \pm 1}=-\frac{\partial \ln \Xi}{\partial \alpha}\\
+&amp;U=\sum_ia_i\varepsilon_i=-\frac{\partial\ln\Xi}{\partial\beta}\\
+&amp;Y_{k}=\sum_{i} a_{i} \frac{\partial \varepsilon_{i}}{\partial y_{k}}=-\frac{1}{\beta} \frac{\partial \ln \Xi}{\partial y_{k}}, \quad \left(p=\frac{1}{\beta} \frac{\partial \ln \Xi}{\partial V}\right) \\
+&amp;S=k\left(\ln\Xi+N\alpha+U\beta\right)=k\left[\ln \Xi-\alpha \frac{\partial \ln \Xi}{\partial \alpha}-\beta \frac{\partial \ln \Xi}{\partial \beta}\right]\\
+&amp;S&#39;=0\\
+&amp;\mu=-\frac{\alpha}{\beta}\\
+
+\end{aligned}\]</span>
+<p>$$</p>
+<h2 id="弱简并理想玻色气体和费米气体">弱简并理想玻色气体和费米气体</h2>
+<p>对<span class="math inline">\(x\)</span>展开 <span class="math display">\[
+\begin{aligned}
+\ln \Xi&amp;=\pm \int_0^\infty g(\varepsilon) \ln \left(1 \pm e^{-\alpha-\beta \varepsilon}\right)d\varepsilon\\
+&amp;=\sum_{n=1}^{\infty}(\mp 1)^{n-1} \frac{1}{n} \int_{0}^{\infty}  g(\varepsilon) e^{-n(\alpha+\beta \varepsilon)}d \varepsilon\\
+&amp;=C(\beta)Vf(\alpha)
+\end{aligned}
+\]</span> 求<span class="math inline">\(N\)</span>，解出<span class="math inline">\(x\)</span>、<span class="math inline">\(\alpha\)</span>的关系，把<span class="math inline">\(f(\alpha)\)</span>用<span class="math inline">\(x\)</span>展开，算出别的宏观量</p>
+<p>算就完了</p>
+<h2 id="bose-einstein凝聚">Bose-Einstein凝聚</h2>
+<blockquote>
+<p><span class="math inline">\(x\sim1\)</span>，理想简并玻色气体</p>
+</blockquote>
+<p><span class="math display">\[
+N=\sum_{i} a_{i}=\sum_{i} \frac{\omega_{i}}{\exp \left(\beta (\varepsilon_{i}-\mu)\right) - 1}\\
+\Rightarrow \varepsilon_i-\mu\le0\\
+\Rightarrow \mu\le\varepsilon_0
+\]</span></p>
+<p><span class="math inline">\(N\)</span>恒定，则<span class="math inline">\(T\)</span>↓，<span class="math inline">\(\mu\)</span>↑，当<span class="math inline">\(T=T_c\)</span>时，<span class="math inline">\(\mu=\varepsilon_0\)</span>，此时 <span class="math display">\[
+N=N_{\varepsilon&gt;0}=\int_0^\infty \frac{g(\varepsilon)}{\exp \left(\beta \varepsilon\right) - 1}d\varepsilon\\
+\]</span> <span class="math inline">\(T&lt;T_c\)</span>时，<span class="math inline">\(\mu=\varepsilon_0\)</span>，<span class="math inline">\(N&gt;N_{\varepsilon&gt;0}\)</span>，多出来的粒子全在基态凝聚 <span class="math display">\[
+N_{\varepsilon=0}=N-N_{\varepsilon&gt;0}
+\]</span> <span class="math inline">\(\mu=\varepsilon_0\)</span>下所有宏观量都有解析解，非常舒服</p>
+<p><strong>奇怪的积分公式：</strong> <span class="math display">\[
+I(n)=\int_0^\infty dx\frac{x^{n-1}}{e^x-1}=\Gamma(n)\xi(n)\\
+\xi(4)=\frac{\pi^4}{90}
+\]</span></p>
+<h2 id="光子气体">光子气体</h2>
+<blockquote>
+<p>理想简并玻色气体，相对论性，<span class="math inline">\(m=0\)</span>，<span class="math inline">\(\alpha=0\)</span>，<span class="math inline">\(g_s=2\)</span></p>
+</blockquote>
+<p><span class="math display">\[
+g(\nu)d\nu=g_s\frac{4\pi V}{c^3}\nu^2d\nu
+\]</span></p>
+<p>能量频谱 <span class="math display">\[
+U(\nu)d\nu=\frac{g(\nu)h\nu}{e^{\beta h\nu}-1}d\nu=\frac{8\pi Vh}{c^3}\frac{\nu^3}{e^{\beta h\nu}-1}d\nu
+\]</span></p>
+<p><span class="math display">\[
+\ln\Xi(\beta,V)=\frac{8\pi^5V}{45h^3c^3\beta^3}
+\]</span></p>
+<h2 id="声子气体">声子气体</h2>
+<blockquote>
+<p>理想简并玻色气体，类相对论性<span class="math inline">\(\varepsilon=\hbar\omega= vp\)</span>，<span class="math inline">\(m=0\)</span>，<span class="math inline">\(\alpha=0\)</span>，<span class="math inline">\(g_s=\)</span>横1+纵2</p>
+</blockquote>
+<p>存在截止频率<span class="math inline">\(\omega_D\)</span>（声子能量上限）， <span class="math display">\[
+g(\omega)=\left\{\begin{array}{l}
+9N\omega^2/\omega_D^3\\
+0
+\end{array}\right.\quad
+\begin{array}{l}
+0\le\omega\le\omega_D\\
+\omega&gt;\omega_D
+\end{array}
+\]</span></p>
+<p><span class="math display">\[
+3N=\int_0^{\omega_D}g(\omega)d\omega
+\]</span></p>
+<p><span class="math inline">\(N\)</span>为固体的原子数</p>
+<p>有限定积分没有解析解，只能近似</p>
+<h2 id="fermi气体">Fermi气体</h2>
+<p><span class="math display">\[
+f_i=\frac{a_{i}}{\omega_{i}}=\frac{1}{\exp \left(\beta (\varepsilon_{i}-\mu)\right)+1}
+\]</span></p>
+<h3 id="零温情形完全简并fermi气">零温情形，完全简并Fermi气</h3>
+<p><span class="math display">\[
+\begin{align}
+\lim_{\beta\to\infty}f_i=\left\{\begin{array}{l}
+1\\
+0
+\end{array}\right.\quad
+\begin{array}{l}
+\varepsilon_{i}&gt;\mu_0\\
+\varepsilon_{i}&lt;\mu_0
+\end{array}
+\end{align}
+\]</span></p>
+<p>Fermi能：<span class="math inline">\(\varepsilon_F=\mu_0=\mu(T=0)\)</span> <span class="math display">\[
+N=\int_0^\infty \frac{g(\varepsilon)}{\exp \left(\beta (\varepsilon-\mu_0)\right)+1}d\varepsilon=\int_0^{\mu_0} g(\varepsilon)d\varepsilon
+\]</span> 零点宏观量： <span class="math display">\[
+\begin{align}
+&amp;U_0=\int_0^{\mu_0} \varepsilon g(\varepsilon)d\varepsilon\\
+&amp;P_0=-\frac{\partial U_0}{\partial V}\\
+&amp;S_0=k\ln\Omega_F=0
+\end{align}
+\]</span></p>
+<h3 id="低温情形强简并fermi气">低温情形，强简并Fermi气</h3>
+<p>把<span class="math inline">\(f&#39;(\varepsilon)\)</span>和<span class="math inline">\(\varepsilon^n\)</span>在<span class="math inline">\(\mu\)</span>附近展开，硬算</p>
+<p>结论：低温下电子气热容<span class="math inline">\(C_V\sim\frac{\pi^2}{2}Nk\frac{kT}{\mu_0}\)</span></p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
 
     
 
@@ -337,10 +537,16 @@
         <i class="far fa-calendar"></i>
       </span>
       <span class="post-meta-item-text">发表于</span>
-      
 
-      <time title="创建时间：2022-04-22 00:00:00 / 修改时间：00:30:06" itemprop="dateCreated datePublished" datetime="2022-04-22T00:00:00+08:00">2022-04-22</time>
+      <time title="创建时间：2022-04-22 00:00:00" itemprop="dateCreated datePublished" datetime="2022-04-22T00:00:00+08:00">2022-04-22</time>
     </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">更新于</span>
+        <time title="修改时间：2022-06-15 00:03:47" itemprop="dateModified" datetime="2022-06-15T00:03:47+08:00">2022-06-15</time>
+      </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
         <i class="far fa-folder"></i>
@@ -372,8 +578,9 @@
 <h2 id="宏观量的统计表达式">宏观量的统计表达式</h2>
 <h3 id="配分函数与宏观量">配分函数与宏观量</h3>
 <p><strong>配分函数<span class="math inline">\(Z\)</span>：</strong> <span class="math display">\[
-Z(\beta, y) \equiv \sum \omega_{i} \exp \left(-\beta \varepsilon_{i}\right)
-\]</span> 两种宏观量：</p>
+Z(\beta, y) \equiv \sum_i \omega_{i} \exp \left(-\beta \varepsilon_{i}\right)
+\]</span> (单粒子体系，不是系综)</p>
+<p>两种宏观量：</p>
 <ol type="1">
 <li>有微观对应（如<span class="math inline">\(U\)</span>），为微观对应量的统计平均值</li>
 <li>无微观对应（如<span class="math inline">\(p\)</span>，<span class="math inline">\(T\)</span>，<span class="math inline">\(S\)</span>等），通过热力学与1相关</li>
@@ -443,7 +650,7 @@ Z(\beta, y) \equiv \sum \omega_{i} \exp \left(-\beta \varepsilon_{i}\right)
           <i class="far fa-calendar-check"></i>
         </span>
         <span class="post-meta-item-text">更新于</span>
-        <time title="修改时间：2022-04-22 00:10:53" itemprop="dateModified" datetime="2022-04-22T00:10:53+08:00">2022-04-22</time>
+        <time title="修改时间：2022-06-14 20:52:01" itemprop="dateModified" datetime="2022-06-14T20:52:01+08:00">2022-06-14</time>
       </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -1113,103 +1320,6 @@ Q^\dagger=Q
           <!--noindex-->
             <div class="post-button">
               <a class="btn" href="/2021/10/17/t3w6/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://blog.hidariya.space/2021/09/26/t3w2/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Dirac的左矢">
-      <meta itemprop="description" content="这是左矢，他搭了个博客，记录他自己的日常">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="左矢的态矢空间">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2021/09/26/t3w2/" class="post-title-link" itemprop="url">Week2：乐不出来</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">发表于</span>
-
-      <time title="创建时间：2021-09-26 00:00:00" itemprop="dateCreated datePublished" datetime="2021-09-26T00:00:00+08:00">2021-09-26</time>
-    </span>
-      <span class="post-meta-item">
-        <span class="post-meta-item-icon">
-          <i class="far fa-calendar-check"></i>
-        </span>
-        <span class="post-meta-item-text">更新于</span>
-        <time title="修改时间：2021-10-23 22:53:18" itemprop="dateModified" datetime="2021-10-23T22:53:18+08:00">2021-10-23</time>
-      </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">分类于</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/diary/" itemprop="url" rel="index"><span itemprop="name">日常</span></a>
-        </span>
-    </span>
-
-  
-    <span id="/2021/09/26/t3w2/" class="post-meta-item leancloud_visitors" data-flag-title="Week2：乐不出来" title="阅读次数">
-      <span class="post-meta-item-icon">
-        <i class="far fa-eye"></i>
-      </span>
-      <span class="post-meta-item-text">阅读次数：</span>
-      <span class="leancloud-visitors-count"></span>
-    </span>
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <p>第二周是中秋和百团，可以说正经事一件没干，净在找乐子。乐了，但没有完全乐。</p>
-<figure>
-<img src="https://blog.hidariya.space/2021/09/26/t3w2/Cache_6140efe62b6a7b55..jpg" alt="只能乐一点点"><figcaption aria-hidden="true">只能乐一点点</figcaption>
-</figure>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2021/09/26/t3w2/#more" rel="contents">
                 阅读全文 &raquo;
               </a>
             </div>
