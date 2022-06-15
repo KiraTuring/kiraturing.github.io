@@ -173,7 +173,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">36</span>
+          <span class="site-state-item-count">37</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -241,10 +241,16 @@
         <i class="far fa-calendar"></i>
       </span>
       <span class="post-meta-item-text">发表于</span>
-      
 
-      <time title="创建时间：2022-06-14 00:00:00 / 修改时间：21:01:57" itemprop="dateCreated datePublished" datetime="2022-06-14T00:00:00+08:00">2022-06-14</time>
+      <time title="创建时间：2022-06-14 00:00:00" itemprop="dateCreated datePublished" datetime="2022-06-14T00:00:00+08:00">2022-06-14</time>
     </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">更新于</span>
+        <time title="修改时间：2022-06-15 14:49:29" itemprop="dateModified" datetime="2022-06-15T14:49:29+08:00">2022-06-15</time>
+      </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
         <i class="far fa-folder"></i>
@@ -392,6 +398,182 @@ N=\int_0^\infty \frac{g(\varepsilon)}{\exp \left(\beta (\varepsilon-\mu_0)\right
 <h3 id="低温情形强简并fermi气">低温情形，强简并Fermi气</h3>
 <p>把<span class="math inline">\(f&#39;(\varepsilon)\)</span>和<span class="math inline">\(\varepsilon^n\)</span>在<span class="math inline">\(\mu\)</span>附近展开，硬算</p>
 <p>结论：低温下电子气热容<span class="math inline">\(C_V\sim\frac{\pi^2}{2}Nk\frac{kT}{\mu_0}\)</span></p>
+<p><strong>つづく</strong></p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://blog.hidariya.space/2022/06/14/sm5/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Dirac的左矢">
+      <meta itemprop="description" content="这是左矢，他搭了个博客，记录他自己的日常">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="左矢的态矢空间">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2022/06/14/sm5/" class="post-title-link" itemprop="url">统计力学一捅就寄（5）——系综理论</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2022-06-14 00:00:00" itemprop="dateCreated datePublished" datetime="2022-06-14T00:00:00+08:00">2022-06-14</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">更新于</span>
+        <time title="修改时间：2022-06-15 16:59:20" itemprop="dateModified" datetime="2022-06-15T16:59:20+08:00">2022-06-15</time>
+      </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/note/" itemprop="url" rel="index"><span itemprop="name">笔记</span></a>
+        </span>
+    </span>
+
+  
+    <span id="/2022/06/14/sm5/" class="post-meta-item leancloud_visitors" data-flag-title="统计力学一捅就寄（5）——系综理论" title="阅读次数">
+      <span class="post-meta-item-icon">
+        <i class="far fa-eye"></i>
+      </span>
+      <span class="post-meta-item-text">阅读次数：</span>
+      <span class="leancloud-visitors-count"></span>
+    </span>
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h1 id="系综理论">系综理论</h1>
+<p>非近独立粒子系统，单粒子态无法描述系统状态→系统作为整体</p>
+<p>粒子→多粒子系统→系综</p>
+<h2 id="系统微观状态的描述与统计系综">系统微观状态的描述与统计系综</h2>
+<p>系统微观状态<span class="math inline">\(s\)</span>：每个粒子的<span class="math inline">\(q_i\)</span>、<span class="math inline">\(p_i\)</span>，即<span class="math inline">\(\Gamma\)</span>空间的点（总自由度<span class="math inline">\(f=Nr\)</span>）</p>
+<p>每个态占据相体积<span class="math inline">\(h^f\)</span></p>
+<p>分布函数<span class="math inline">\(\rho_s\)</span>：系统处于微观态<span class="math inline">\(s\)</span>的概率</p>
+<p>归一化： <span class="math display">\[
+\sum_s\rho_s=1
+\]</span> 宏观量是各微观态对应量的统计平均值： <span class="math display">\[
+\bar{B}=\sum_{s} \rho_s B_{s}\\
+S=\sum_{s} \rho_s (-k\ln\rho_s)
+\]</span></p>
+<blockquote>
+<p>时间平均值，统计平均值 = 系综平均值</p>
+</blockquote>
+<p>一些物理量分类：</p>
+<ul>
+<li>系统微观态物理量：<span class="math inline">\(\rho_s, E_s, N\)</span></li>
+<li>能级宏观态物理量（近独立）：<span class="math inline">\(a_i, \varepsilon_i, \omega_i, \Omega_{\{a_i\}}\)</span></li>
+<li>系统宏观态物理量：<span class="math inline">\(N, \mu(\alpha), V, p, E, T(\beta), S(\Omega), F(Z), G, J(\Xi)\)</span></li>
+</ul>
+<h2 id="微正则分布">微正则分布</h2>
+<p>给定<span class="math inline">\(N, V, E_s\)</span></p>
+<p>分布： <span class="math display">\[
+\rho_s=\Omega^{-1}
+\]</span> 特性函数： <span class="math display">\[
+\Omega=\sum_s1\\
+S(N,E,V)=k\ln\Omega(N,E,V)
+\]</span></p>
+<h2 id="正则分布">正则分布</h2>
+<p>给定<span class="math inline">\(N,V,T\)</span></p>
+<p>分布： <span class="math display">\[
+\rho_{s}=Z^{-1} \exp \left(-\beta E_{s}\right)
+\]</span> 特性函数： <span class="math display">\[
+\begin{align}
+Z&amp;=\sum_{s} \exp \left(-\beta E_{s}\right)\\
+&amp;=\frac{1}{N!} \frac{1}{h^{f}} \int d^f q d^f p \exp (-\beta E(q, p, y))\\
+\end{align}
+\]</span></p>
+<p><span class="math display">\[
+F(N,T,V)=-kT\ln Z(N,T,V)
+\]</span></p>
+<p>可区分粒子：<span class="math inline">\(Z=z_0^N\)</span></p>
+<p>不可区分粒子：<span class="math inline">\(Z=\frac{1}{N!}z_0^N\)</span></p>
+<h3 id="非理想气体">非理想气体</h3>
+<p><span class="math display">\[
+\begin{align}
+Q &amp;\equiv \int \prod_{i}\left(d q_{i}\right) \exp (-\beta \Phi(q_i))\\
+&amp;=\int \prod_{i}\left(d q_{i}\right) \cdot \prod_{i&lt;j}\left(1+f_{i j}\right)\\
+&amp;=\int \prod_{i}\left(d q_{i}\right)\left\{1+\sum_{i&lt;j} f_{i j}+\cdots\right\}\\
+&amp;\approx V^{N}+\frac{1}{2} N(N-1) V^{N-2} \int d^{3} \vec{r}_{1} \int d^{3} \vec{r}_{2} f\left(\vec{r}_{12}\right)\\
+&amp;\approx V^{N}+\frac{1}{2} N^2 V^{N-1} \int d^{3} \vec{r} f(r)\\
+&amp;\approx V^{N}\left[1-\frac{N^{2}}{V} a_{2}(T)\right]
+\end{align}
+\]</span></p>
+<p>其中<span class="math inline">\(f_{i j} \equiv f\left(r_{i j}\right)=\exp \left(-\beta \phi_{i j}\right)-1\)</span>，</p>
+<p><span class="math inline">\(a_{2}(T)=-\frac{1}{2} \int d^3 \vec{r} f(r)=-2 \pi \int_{0}^{\infty} r^{2} d r[\exp (-\beta u(r))-1]\)</span></p>
+<p>状态方程： <span class="math display">\[
+\frac{p v}{k T}=1+\frac{a_{2}(T)}{v}
+\]</span></p>
+<h2 id="巨正则分布">巨正则分布</h2>
+<p>给定<span class="math inline">\(\mu, V, T\)</span></p>
+<p>分布： <span class="math display">\[
+\rho_{N s}=\Xi{ }^{1} \exp \left(-\alpha N-\beta E_{s}\right)
+\]</span> 特性函数： <span class="math display">\[
+\begin{align}
+\Xi&amp;=\sum_{N=0}^{\infty} \sum_{s} \exp \left(-\alpha N-\beta E_{s}\right)\\&amp;=\sum_{N=0}^{\infty} \frac{1}{N ! h^{r N}} \exp (-\alpha N) \int d^{(r N)} q d^{(r N)} p \exp (-\beta E(q, p, y))
+\end{align}
+\]</span></p>
+<p><span class="math display">\[
+J(N,T,V)=-kT\ln \Xi(N,T,V)\\
+J=F-N\mu,\quad dJ=-pdV-SdT-Nd\mu
+\]</span></p>
+<h3 id="巨正则分布导出近独立粒子平衡分布">巨正则分布导出近独立粒子平衡分布</h3>
+<p>巨配分函数对<span class="math inline">\(\{a_i\}\)</span>没有任何约束，可以直接退化为近独立情况（<span class="math inline">\(\sum^\infty_{N=0}\sum_s\Rightarrow\sum_{\left\{a_{i}\right\}}\)</span>） <span class="math display">\[
+\begin{align}
+\Xi&amp;=\sum_{\left\{a_{i}\right\}} \prod_{i}\left[\Omega_{a_{i}} \exp \left(-\alpha a_{i}-\beta a_{i} \varepsilon_{i}\right)\right]\\
+&amp;=\prod_{i} \sum_{a_{i}}\left[\Omega_{a_{i}} \exp \left(-\alpha a_{i}-\beta a_{i} \varepsilon_{i}\right)\right]\\
+&amp;=\prod_i\Xi_i
+\end{align}
+\]</span></p>
+<p><span class="math display">\[
+\bar{a_i}=-\frac{\partial \ln \Xi_{i}}{\partial \alpha} =-\frac{\partial \ln \Xi_{i}}{\partial \beta \varepsilon_{i}}
+\]</span></p>
+<p>代入<span class="math inline">\(\Omega_{a_{i}}\)</span>即可得到<span class="math inline">\(\Xi_i\)</span>和<span class="math inline">\(\bar{a_i}\)</span></p>
+<h1 id="完了しました">完了しました</h1>
+<p>（后面非平衡统计的章节太逆天，摸了）</p>
+<p>这是我第一次尝试用Markdown代替手写笔记，也是第一次把我的态矢空间拿来学习用。总的来说，好处是公式长得很好看，比手写看着舒服很多，而且便于修改优化。毕竟倪军这门课的PPT思路就不是特别清晰（也可能因为我一半的课都没去听），如果把系综理论放在统计力学部分的最前面，应该会更好理解吧。坏处就是效率远远低于手写，因为我强迫症，敲个公式都反复修改好几次，就算有Mathpix加持，也不如手写公式的速度。好在统计力学的公式比较少（相比电动和广相），慢慢整理下来也好理清思路。下次如果哪门课的公式比较少，而且PPT或者讲义比较干净方便Mathpix发挥的，用Markdown做笔记也不失为一种方法。</p>
 
       
     </div>
@@ -1229,102 +1411,6 @@ Q^\dagger=Q
 </ol>
 </section>
 
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://blog.hidariya.space/2021/10/17/t3w6/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Dirac的左矢">
-      <meta itemprop="description" content="这是左矢，他搭了个博客，记录他自己的日常">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="左矢的态矢空间">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2021/10/17/t3w6/" class="post-title-link" itemprop="url">Week6—坐阱观天</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">发表于</span>
-
-      <time title="创建时间：2021-10-17 00:00:00" itemprop="dateCreated datePublished" datetime="2021-10-17T00:00:00+08:00">2021-10-17</time>
-    </span>
-      <span class="post-meta-item">
-        <span class="post-meta-item-icon">
-          <i class="far fa-calendar-check"></i>
-        </span>
-        <span class="post-meta-item-text">更新于</span>
-        <time title="修改时间：2021-10-23 23:14:03" itemprop="dateModified" datetime="2021-10-23T23:14:03+08:00">2021-10-23</time>
-      </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">分类于</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/diary/" itemprop="url" rel="index"><span itemprop="name">日常</span></a>
-        </span>
-    </span>
-
-  
-    <span id="/2021/10/17/t3w6/" class="post-meta-item leancloud_visitors" data-flag-title="Week6—坐阱观天" title="阅读次数">
-      <span class="post-meta-item-icon">
-        <i class="far fa-eye"></i>
-      </span>
-      <span class="post-meta-item-text">阅读次数：</span>
-      <span class="leancloud-visitors-count"></span>
-    </span>
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <p>刚意识到这个博客已经断更快一个月了，上一次更新，仿佛还是上次。原因之一是这个月被调休搞得乱七八糟，周更的概念已经难以定义了。另一个原因显而易见，那就是——</p>
-<p><strong>忘了</strong></p>
-<p><img src="https://blog.hidariya.space/2021/10/17/t3w6/1633785569167.jpeg"></p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2021/10/17/t3w6/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
       
     </div>
 
